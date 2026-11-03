@@ -257,21 +257,18 @@
         }
 
         /* Book Cards */
-            .books-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* ২ কলাম */
-            gap: 12px; /* গ্যাপ কমানো হলো */
-            margin: 18px 0 36px;
-            max-width: 500px; /* গ্রিড সেন্টারে রাখতে চওড়া সীমিত করা হলো */
-            margin-left: auto;
-            margin-right: auto;
-        }
+           .books-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin: 18px 0 36px;
+}
 
-        @media (min-width: 768px) {
-            .books-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
+@media (min-width: 768px) {
+    .books-grid {
+        grid-template-columns: repeat(4, 1fr); /* ডেস্কটপে ৪টি বই পাশাপাশি */
+    }
+}
 
         .book-card {
             background: white;
@@ -1233,6 +1230,27 @@
                 font-size: 1.2rem; /* বুলেট পয়েন্টের সাইজ ছোট করা হলো */
             }
         }
+        /* ===== DESKTOP VIEW RESET (মোবাইলের কোড ডেস্কটপে কাজ করবে না) ===== */
+@media (min-width: 769px) {
+    .hero { flex-direction: row; padding: 28px 24px; text-align: left; }
+    .hero-cta-group { flex-direction: row; justify-content: flex-start; width: auto; }
+    .hero-cta-group a { width: auto; }
+    .price-area { flex-direction: row; justify-content: flex-start; gap: 16px; }
+    .hero-right { justify-content: flex-end; }
+    .product-image { max-width: 280px; }
+    
+    .books-grid { grid-template-columns: repeat(4, 1fr) !important; max-width: 100%; }
+    .book-card { padding: 16px 12px 18px !important; }
+    
+    .offer-list { display: flex; flex-direction: row; flex-wrap: wrap; max-width: 100%; }
+    .form-row { flex-direction: row; gap: 16px; }
+    .order-flex { flex-direction: row; }
+    .radio-group { flex-direction: row; }
+    
+    .footer-content { flex-direction: row; text-align: left; align-items: flex-start; }
+    .footer-contact { align-items: flex-start; }
+    .contact-btns { flex-direction: row; justify-content: center; }
+}
     </style>
 </head>
 <body>
