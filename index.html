@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
@@ -7,7 +8,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -24,7 +27,11 @@
             line-height: 1.5;
         }
 
-        h1, h2, h3, h4, .bangla {
+        h1,
+        h2,
+        h3,
+        h4,
+        .bangla {
             font-family: 'Noto Sans Bengali', sans-serif;
             font-weight: 600;
         }
@@ -38,14 +45,14 @@
         }
 
         /* Header */
-          .header {
+        .header {
             background-color: #2F3E46;
             padding: 14px 0;
             border-radius: 0 0 20px 20px;
             margin-bottom: 24px;
         }
 
-          .header-inner {
+        .header-inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -76,7 +83,8 @@
         }
 
         .header-order-btn {
-            background: #D9776A; /* বাটনের কালার */
+            background: #D9776A;
+            /* বাটনের কালার */
             color: white;
             border: none;
             padding: 10px 24px;
@@ -84,7 +92,8 @@
             font-weight: 600;
             font-size: 1rem;
             cursor: pointer;
-            box-shadow: none; /* শ্যাডো বাদ দেওয়া হলো */
+            box-shadow: none;
+            /* শ্যাডো বাদ দেওয়া হলো */
             transition: all 0.15s ease;
             font-family: 'Noto Sans Bengali', sans-serif;
             text-decoration: none;
@@ -141,11 +150,13 @@
             font-weight: 400;
         }
 
-         .price-area {
+        .price-area {
             display: flex;
             align-items: baseline;
-            justify-content: center; /* সেন্টারে আনার জন্য */
-            gap: 8px; /* গ্যাপ কমিয়ে ৮ পিক্সেল করা হলো */
+            justify-content: center;
+            /* সেন্টারে আনার জন্য */
+            gap: 8px;
+            /* গ্যাপ কমিয়ে ৮ পিক্সেল করা হলো */
             flex-wrap: wrap;
             margin-bottom: 18px;
         }
@@ -166,7 +177,8 @@
 
         .hero-cta-group {
             display: flex;
-            justify-content: center; /* বাটন পাশাপাশি সেন্টারে */
+            justify-content: center;
+            /* বাটন পাশাপাশি সেন্টারে */
             gap: 12px;
             flex-wrap: wrap;
             width: 100%;
@@ -216,9 +228,10 @@
             background: #A5AFB1;
         }
 
-         .hero-right {
+        .hero-right {
             display: flex;
-            justify-content: center; /* ইমেজ সেন্টারে আনার জন্য */
+            justify-content: center;
+            /* ইমেজ সেন্টারে আনার জন্য */
             width: 100%;
         }
 
@@ -227,7 +240,7 @@
             max-width: 280px;
             height: auto;
             border-radius: 16px;
-            border: 4px solid #E3D5CA; 
+            border: 4px solid #E3D5CA;
             box-shadow: 0 0 20px rgba(217, 119, 106, 0.15);
             display: block;
             object-fit: cover;
@@ -257,18 +270,19 @@
         }
 
         /* Book Cards */
-           .books-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-    margin: 18px 0 36px;
-}
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin: 18px 0 36px;
+        }
 
-@media (min-width: 768px) {
-    .books-grid {
-        grid-template-columns: repeat(4, 1fr); /* ডেস্কটপে ৪টি বই পাশাপাশি */
-    }
-}
+        @media (min-width: 768px) {
+            .books-grid {
+                grid-template-columns: repeat(4, 1fr);
+                /* ডেস্কটপে ৪টি বই পাশাপাশি */
+            }
+        }
 
         .book-card {
             background: white;
@@ -282,14 +296,32 @@
             animation: floatIn 0.6s ease backwards;
         }
 
-        .book-card:nth-child(1) { animation-delay: 0.05s; }
-        .book-card:nth-child(2) { animation-delay: 0.15s; }
-        .book-card:nth-child(3) { animation-delay: 0.25s; }
-        .book-card:nth-child(4) { animation-delay: 0.35s; }
+        .book-card:nth-child(1) {
+            animation-delay: 0.05s;
+        }
+
+        .book-card:nth-child(2) {
+            animation-delay: 0.15s;
+        }
+
+        .book-card:nth-child(3) {
+            animation-delay: 0.25s;
+        }
+
+        .book-card:nth-child(4) {
+            animation-delay: 0.35s;
+        }
 
         @keyframes floatIn {
-            0% { opacity: 0; transform: translateY(16px); }
-            100% { opacity: 1; transform: translateY(0); }
+            0% {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .book-card:hover {
@@ -376,7 +408,10 @@
         .modal-overlay {
             display: none;
             position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: rgba(16, 24, 32, 0.6);
             backdrop-filter: blur(3px);
             align-items: center;
@@ -403,8 +438,15 @@
         }
 
         @keyframes popIn {
-            0% { transform: scale(0.95); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
+            0% {
+                transform: scale(0.95);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         .modal-close {
@@ -496,7 +538,7 @@
 
         /* Offer Section */
         .offer-card {
-            background: linear-gradient(135deg, #F4F1EA 0%, #E8E2D5 100%); 
+            background: linear-gradient(135deg, #F4F1EA 0%, #E8E2D5 100%);
             border-radius: 32px;
             padding: 28px 24px;
             margin: 32px 0;
@@ -506,8 +548,13 @@
         }
 
         @keyframes glowPulse {
-            0% { box-shadow: 0 8px 22px rgba(16, 24, 32, 0.06); }
-            100% { box-shadow: 0 16px 36px rgba(16, 24, 32, 0.15); }
+            0% {
+                box-shadow: 0 8px 22px rgba(16, 24, 32, 0.06);
+            }
+
+            100% {
+                box-shadow: 0 16px 36px rgba(16, 24, 32, 0.15);
+            }
         }
 
         .offer-headline {
@@ -518,12 +565,14 @@
             text-align: center;
         }
 
-         .offer-list {
+        .offer-list {
             list-style: none;
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* ২টি কলাম */
+            grid-template-columns: repeat(2, 1fr);
+            /* ২টি কলাম */
             gap: 10px 20px;
-            justify-items: center; /* আইটেম সেন্টারে */
+            justify-items: center;
+            /* আইটেম সেন্টারে */
             justify-content: center;
             margin: 18px auto;
             max-width: 350px;
@@ -551,7 +600,7 @@
             gap: 10px 22px;
             justify-content: center;
             margin: 18px 0 14px;
-            background: rgba(255,255,255,0.5);
+            background: rgba(255, 255, 255, 0.5);
             padding: 14px 16px;
             border-radius: 50px;
         }
@@ -602,8 +651,15 @@
         }
 
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .why-title {
@@ -649,19 +705,26 @@
             margin-right: 4px;
         }
 
-                   .form-row {
-                flex-direction: column;
-                gap: 4px; /* আগে ১০ বা তার বেশি ছিল, এখানে ৪ করলাম */
-            }
-            .form-group {
-                margin-bottom: 8px; /* ইনপুটের নিচের গ্যাপ কমানো হলো */
-            }
-            .quantity-group {
-                margin-bottom: 0px !important; /* পরিমাণ এর নিচের এক্সট্রা গ্যাপ বাদ */
-            }
-            .delivery-group {
-                margin-top: 8px; /* ডেলিভারি এলাকার উপরের গ্যাপ কমিয়ে আনা হলো */
-            }
+        .form-row {
+            flex-direction: column;
+            gap: 4px;
+            /* আগে ১০ বা তার বেশি ছিল, এখানে ৪ করলাম */
+        }
+
+        .form-group {
+            margin-bottom: 8px;
+            /* ইনপুটের নিচের গ্যাপ কমানো হলো */
+        }
+
+        .quantity-group {
+            margin-bottom: 0px !important;
+            /* পরিমাণ এর নিচের এক্সট্রা গ্যাপ বাদ */
+        }
+
+        .delivery-group {
+            margin-top: 8px;
+            /* ডেলিভারি এলাকার উপরের গ্যাপ কমিয়ে আনা হলো */
+        }
 
         /* Order Form Section */
         .order-section {
@@ -751,13 +814,14 @@
 
         .radio-group {
             display: flex;
-            flex-direction: row; /* পাশাপাশি রাখার জন্য */
+            flex-direction: row;
+            /* পাশাপাশি রাখার জন্য */
             gap: 10px;
             flex-wrap: wrap;
             padding: 6px 0;
         }
 
-          .radio-option {
+        .radio-option {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -768,10 +832,13 @@
             border: 2px solid #A5AFB1;
             cursor: pointer;
             transition: 0.15s;
-            font-size: 0.85rem; /* লেখা একটু ছোট */
+            font-size: 0.85rem;
+            /* লেখা একটু ছোট */
             font-weight: 500;
-            flex: 1; /* সমান জায়গা নেবে */
-            min-width: 120px; /* মিনিমাম সাইজ */
+            flex: 1;
+            /* সমান জায়গা নেবে */
+            min-width: 120px;
+            /* মিনিমাম সাইজ */
         }
 
         .radio-option.selected {
@@ -981,10 +1048,12 @@
             pointer-events: none;
             transition: opacity 0.4s ease;
         }
+
         .thankyou-overlay.active {
             opacity: 1;
             pointer-events: all;
         }
+
         .thankyou-card {
             background: #FAF9F6;
             width: 90%;
@@ -995,14 +1064,15 @@
             position: relative;
             transform: translateY(40px) scale(0.9);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
             overflow: hidden;
             border: 1px solid #E3D5CA;
         }
+
         .thankyou-overlay.active .thankyou-card {
             transform: translateY(0) scale(1);
         }
-        
+
         .success-checkmark {
             width: 80px;
             height: 80px;
@@ -1014,19 +1084,34 @@
             justify-content: center;
             animation: popCheckmark 0.6s ease-out forwards;
         }
+
         .success-checkmark i {
             font-size: 40px;
             color: #1abc9c;
             transform: scale(0);
             animation: scaleCheckmark 0.4s 0.3s ease-in-out forwards;
         }
+
         @keyframes popCheckmark {
-            0% { transform: scale(0); opacity: 0; }
-            70% { transform: scale(1.2); }
-            100% { transform: scale(1); opacity: 1; }
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            70% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
+
         @keyframes scaleCheckmark {
-            to { transform: scale(1); }
+            to {
+                transform: scale(1);
+            }
         }
 
         .thankyou-title {
@@ -1035,12 +1120,14 @@
             margin-bottom: 8px;
             font-weight: 700;
         }
+
         .thankyou-subtitle {
             font-size: 0.95rem;
             color: #344B5C;
             margin-bottom: 20px;
             line-height: 1.6;
         }
+
         .order-id-box {
             background: #E3D5CA;
             padding: 12px 20px;
@@ -1052,7 +1139,7 @@
             display: inline-block;
             border: 1px dashed #B55A4E;
         }
-        
+
         .social-links {
             display: flex;
             justify-content: center;
@@ -1061,6 +1148,7 @@
             padding-top: 20px;
             border-top: 1px solid #dce3e7;
         }
+
         .social-links a {
             width: 45px;
             height: 45px;
@@ -1074,76 +1162,133 @@
             transition: all 0.3s ease;
             animation: floatIcon 3s ease-in-out infinite;
         }
-        .social-links a.fb { background: #1877F2; animation-delay: 0s; }
-        .social-links a.insta { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); animation-delay: 0.2s; }
-        .social-links a.wa { background: #25D366; animation-delay: 0.4s; }
-        
+
+        .social-links a.fb {
+            background: #1877F2;
+            animation-delay: 0s;
+        }
+
+        .social-links a.insta {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            animation-delay: 0.2s;
+        }
+
+        .social-links a.wa {
+            background: #25D366;
+            animation-delay: 0.4s;
+        }
+
         .social-links a:hover {
             transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             animation-play-state: paused;
         }
+
         @keyframes floatIcon {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
         }
 
         /* Mobile fine-tuning */
         @media (max-width: 600px) {
-            .hero-title { font-size: 1.5rem; }
-            .new-price { font-size: 1.8rem; }
-            .hero { padding: 18px 16px; }
+            .hero-title {
+                font-size: 1.5rem;
+            }
 
-             .btn-primary, .btn-secondary {
-            /* দুই বাটনের স্টাইল এক করা হলো */
-            padding: 12px 20px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            cursor: pointer;
-            font-family: 'Noto Sans Bengali', sans-serif;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1; /* বাটন সমান জায়গা নেবে */
-            max-width: 160px; /* বাটনের সর্বোচ্চ সাইজ */
-        }
+            .new-price {
+                font-size: 1.8rem;
+            }
 
-            .book-card { padding: 12px 10px; }
-            .order-section { padding: 18px 14px; }
-            .section-title { font-size: 1.4rem; }
-            .offer-headline { font-size: 1.3rem; }
-            .detail-grid span { font-size: 0.8rem; }
-            .summary-row { font-size: 0.85rem; }
-            .order-headline { font-size: 1.4rem; }
-            .footer { padding: 24px 0 20px; }
+            .hero {
+                padding: 18px 16px;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                /* দুই বাটনের স্টাইল এক করা হলো */
+                padding: 12px 20px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 0.95rem;
+                cursor: pointer;
+                font-family: 'Noto Sans Bengali', sans-serif;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                /* বাটন সমান জায়গা নেবে */
+                max-width: 160px;
+                /* বাটনের সর্বোচ্চ সাইজ */
+            }
+
+            .book-card {
+                padding: 12px 10px;
+            }
+
+            .order-section {
+                padding: 18px 14px;
+            }
+
+            .section-title {
+                font-size: 1.4rem;
+            }
+
+            .offer-headline {
+                font-size: 1.3rem;
+            }
+
+            .detail-grid span {
+                font-size: 0.8rem;
+            }
+
+            .summary-row {
+                font-size: 0.85rem;
+            }
+
+            .order-headline {
+                font-size: 1.4rem;
+            }
+
+            .footer {
+                padding: 24px 0 20px;
+            }
         }
 
         body.modal-open {
             overflow: hidden;
         }
 
-        .book-cover-placeholder, .modal-book-cover {
+        .book-cover-placeholder,
+        .modal-book-cover {
             background-size: cover;
             background-position: 41% center;
             background-repeat: no-repeat;
         }
+
         .product-image {
             object-fit: cover;
         }
-        
+
         /* Field Error Style */
         .field-error {
             color: #d32f2f;
             font-size: 0.8rem;
             margin-top: 4px;
-            display: none; /* ডিফল্টভাবে হাইড থাকবে */
+            display: none;
+            /* ডিফল্টভাবে হাইড থাকবে */
             font-weight: 500;
             animation: shake 0.3s ease-in-out;
         }
 
-        .form-group input.invalid, 
+        .form-group input.invalid,
         .form-group textarea.invalid {
             border-color: #d32f2f;
             background-color: #fff8f8;
@@ -1164,494 +1309,696 @@
         }
 
         @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-3px); }
-            75% { transform: translateX(3px); }
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-3px);
+            }
+
+            75% {
+                transform: translateX(3px);
+            }
         }
-                       /* ===== MOBILE RESPONSIVE FIXES ===== */
+
+        /* ===== MOBILE RESPONSIVE FIXES ===== */
         @media (max-width: 768px) {
-            .header-inner { flex-direction: column; gap: 10px; text-align: center; }
-            .hero { flex-direction: column-reverse; padding: 20px 16px; text-align: center; gap: 20px; }
-            .hero-title { font-size: 1.5rem !important; line-height: 1.4; }
-            .price-area { justify-content: center; flex-direction: row; gap: 8px; }
-            .hero-cta-group { justify-content: center; flex-direction: row; width: 100%; gap: 10px; }
-            .hero-cta-group a { width: 48%; padding: 10px 15px; font-size: 0.9rem; }
-            .product-image { max-width: 220px; }
-            
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                padding: 20px 16px;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .hero-title {
+                font-size: 1.5rem !important;
+                line-height: 1.4;
+            }
+
+            .price-area {
+                justify-content: center;
+                flex-direction: row;
+                gap: 8px;
+            }
+
+            .hero-cta-group {
+                justify-content: center;
+                flex-direction: row;
+                width: 100%;
+                gap: 10px;
+            }
+
+            .hero-cta-group a {
+                width: 48%;
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+
+            .product-image {
+                max-width: 220px;
+            }
+
             /* বুক গ্রিড ফিক্স */
-            .books-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; max-width: 100%; margin-left: auto; margin-right: auto; }
-            .book-card { padding: 10px !important; }
-            
+            .books-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 10px !important;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .book-card {
+                padding: 10px !important;
+            }
+
             /* অফার লিস্ট ফিক্স */
-            .offer-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; max-width: 280px; margin: 15px auto; }
-            
+            .offer-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                max-width: 280px;
+                margin: 15px auto;
+            }
+
             /* ফর্ম ফিল্ড ফিক্স (গ্যাপ কমানোর জন্য) */
-            .order-flex { flex-direction: column; }
-            .order-form { padding: 15px 12px; gap: 8px; } /* ফর্মের ভেতরের গ্যাপ কমানো হলো */
-            .form-row { flex-direction: column; gap: 4px; }
-            .form-group { margin-bottom: 6px; } /* প্রতিটি ফিল্ডের নিচের গ্যাপ কমানো হলো */
-            .quantity-group { margin-bottom: 0 !important; }
-            .delivery-group { margin-top: 4px; } 
-            
-            .radio-group { flex-direction: row; gap: 8px; margin-top: 4px; }
-            .radio-option { flex: 1; min-width: 120px; padding: 8px 5px; font-size: 0.8rem; }
-            
+            .order-flex {
+                flex-direction: column;
+            }
+
+            .order-form {
+                padding: 15px 12px;
+                gap: 8px;
+            }
+
+            /* ফর্মের ভেতরের গ্যাপ কমানো হলো */
+            .form-row {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .form-group {
+                margin-bottom: 6px;
+            }
+
+            /* প্রতিটি ফিল্ডের নিচের গ্যাপ কমানো হলো */
+            .quantity-group {
+                margin-bottom: 0 !important;
+            }
+
+            .delivery-group {
+                margin-top: 4px;
+            }
+
+            .radio-group {
+                flex-direction: row;
+                gap: 8px;
+                margin-top: 4px;
+            }
+
+            .radio-option {
+                flex: 1;
+                min-width: 120px;
+                padding: 8px 5px;
+                font-size: 0.8rem;
+            }
+
             /* কন্টাক্ট ও ফুটার ফিক্স */
-            .contact-btns { flex-direction: column; }
-            .contact-btn { width: 100%; justify-content: center; }
-            .footer-content { flex-direction: column; text-align: center; align-items: center; }
-            .footer-slogan { margin: 12px auto 16px; }
-            .footer-contact { align-items: center; }
-            
-                        /* মডাল (পপআপ) ফিক্স */
+            .contact-btns {
+                flex-direction: column;
+            }
+
+            .contact-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .footer-slogan {
+                margin: 12px auto 16px;
+            }
+
+            .footer-contact {
+                align-items: center;
+            }
+
+            /* মডাল (পপআপ) ফিক্স */
             .modal-content {
                 padding: 20px 15px;
                 max-height: 90vh;
             }
-            
+
             /* পপআপের স্পেসিফিকেশন পাশাপাশি দেখানোর জন্য */
             .specs-grid {
-                grid-template-columns: repeat(2, 1fr) !important; /* ২টি কলাম */
-                gap: 8px 10px; /* পাশাপাশি থাকার গ্যাপ */
-                font-size: 0.8rem; /* লেখা একটু ছোট করা হলো */
-            }
-                /* ===== WHY SECTION COMPACT FIX FOR MOBILE ===== */
-        @media (max-width: 768px) {
-            .why-section {
-                padding: 20px 15px; /* সেকশনের ভেতরের প্যাডিং কমানো হলো */
-                margin: 20px 0;
-            }
-            .why-title {
-                font-size: 1.2rem; /* টাইটেল ফন্ট ছোট করা হলো */
-                margin-bottom: 15px; /* টাইটেলের নিচের গ্যাপ কমানো হলো */
-            }
-            .why-list {
-                gap: 10px; /* লিস্টের আইটেমগুলোর মাঝের গ্যাপ কমানো হলো */
-            }
-            .why-item {
-                font-size: 0.85rem; /* লেখার সাইজ ছোট করা হলো */
-                padding: 8px 12px; /* বক্সের ভেতরের প্যাডিং কমানো হলো */
-                gap: 8px;
-                line-height: 1.4;
-            }
-            .why-item::before {
-                font-size: 1.2rem; /* বুলেট পয়েন্টের সাইজ ছোট করা হলো */
-            }
-        }
-        /* ===== DESKTOP VIEW RESET (মোবাইলের কোড ডেস্কটপে কাজ করবে না) ===== */
-@media (min-width: 769px)
+                grid-template-columns: repeat(2, 1fr) !important;
+                /* ২টি কলাম */
+                gap: 8px 10px;
+                /* পাশাপাশি থাকার গ্যাপ */
+                font-size: 0.8rem;
+                /* লেখা একটু ছোট করা হলো */
+            } }
 
-{ .hero { 
-        flex-direction: row; /* লেখা বামে, ছবি ডানে */
-        align-items: center;
-        padding: 28px 24px; 
-        text-align: left; 
-    }
-    .hero-left {
-        flex: 1 1 300px;
-    }
-    .hero-right { 
-        flex: 0 1 300px;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .hero-cta-group { flex-direction: row; justify-content: flex-start; width: auto; gap: 14px; }
-    .hero-cta-group a { width: auto; }
-    
-    .price-area { flex-direction: row; justify-content: flex-start; gap: 16px; }
-    
-    .product-image { max-width: 280px; }
-    
-    .books-grid { grid-template-columns: repeat(4, 1fr) !important; max-width: 100%; }
-    .book-card { padding: 16px 12px 18px !important; }
-    
-    .offer-list { display: flex; flex-direction: row; flex-wrap: wrap; max-width: 100%; }
-    .form-row { flex-direction: row; gap: 16px; }
-    .order-flex { flex-direction: row; }
-    .radio-group { flex-direction: row; }
-    
-    .footer-content { flex-direction: row; text-align: left; align-items: flex-start; }
-    .footer-contact { align-items: flex-start; }
-    .contact-btns { flex-direction: row; justify-content: center; }
-            /* ===== DESKTOP WHY SECTION BIGGER ===== */
-        @media (min-width: 769px) {
-            .why-section {
-                padding: 60px 40px; /* প্যাডিং অনেক বাড়ানো হলো */
-                margin: 50px auto;
-                max-width: 1100px; /* সেকশনটি আরও চওড়া করা হলো */
-                border-radius: 40px; /* বর্ডার রেডিয়াস বড় করা হলো */
+            /* ===== WHY SECTION COMPACT FIX FOR MOBILE ===== */
+            @media (max-width: 768px) {
+                .why-section {
+                    padding: 20px 15px;
+                    /* সেকশনের ভেতরের প্যাডিং কমানো হলো */
+                    margin: 20px 0;
+                }
+
+                .why-title {
+                    font-size: 1.2rem;
+                    /* টাইটেল ফন্ট ছোট করা হলো */
+                    margin-bottom: 15px;
+                    /* টাইটেলের নিচের গ্যাপ কমানো হলো */
+                }
+
+                .why-list {
+                    gap: 10px;
+                    /* লিস্টের আইটেমগুলোর মাঝের গ্যাপ কমানো হলো */
+                }
+
+                .why-item {
+                    font-size: 0.85rem;
+                    /* লেখার সাইজ ছোট করা হলো */
+                    padding: 8px 12px;
+                    /* বক্সের ভেতরের প্যাডিং কমানো হলো */
+                    gap: 8px;
+                    line-height: 1.4;
+                }
+
+                .why-item::before {
+                    font-size: 1.2rem;
+                    /* বুলেট পয়েন্টের সাইজ ছোট করা হলো */
+                }
             }
 
-            .why-title {
-                font-size: 2.5rem; /* টাইটেল বড় করা হলো */
-                margin-bottom: 40px;
-            }
+            /* ===== DESKTOP VIEW RESET (মোবাইলের কোড ডেস্কটপে কাজ করবে না) ===== */
+            @media (min-width: 769px) {
+                .hero {
+                    flex-direction: row;
+                    /* লেখা বামে, ছবি ডানে */
+                    align-items: center;
+                    padding: 28px 24px;
+                    text-align: left;
+                }
 
-            .why-list {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr); /* লেখাগুলো ডেস্কটপে ২ কলামে সাজানো হবে */
-                gap: 20px;
-                max-width: 100%;
-            }
+                .hero-left {
+                    flex: 1 1 300px;
+                }
 
-            .why-item {
-                font-size: 1.25rem; /* লেখার সাইজ বড় করা হলো */
-                padding: 20px 24px; /* বক্সের ভেতরের প্যাডিং বড় করা হলো */
-                border-radius: 20px;
-                align-items: center; /* আইকন ও টেক্সট মাঝখানে রাখার জন্য */
-            }
+                .hero-right {
+                    flex: 0 1 300px;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
 
-            .why-item::before {
-                font-size: 2.5rem; /* বুলেটের সাইজ বড় করা হলো */
+                .hero-cta-group {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    width: auto;
+                    gap: 14px;
+                }
+
+                .hero-cta-group a {
+                    width: auto;
+                }
+
+                .price-area {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    gap: 16px;
+                }
+
+                .product-image {
+                    max-width: 280px;
+                }
+
+                .books-grid {
+                    grid-template-columns: repeat(4, 1fr) !important;
+                    max-width: 100%;
+                }
+
+                .book-card {
+                    padding: 16px 12px 18px !important;
+                }
+
+                .offer-list {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    max-width: 100%;
+                }
+
+                .form-row {
+                    flex-direction: row;
+                    gap: 16px;
+                }
+
+                .order-flex {
+                    flex-direction: row;
+                }
+
+                .radio-group {
+                    flex-direction: row;
+                }
+
+                .footer-content {
+                    flex-direction: row;
+                    text-align: left;
+                    align-items: flex-start;
+                }
+
+                .footer-contact {
+                    align-items: flex-start;
+                }
+
+                .contact-btns {
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                /* ===== DESKTOP WHY SECTION BIGGER ===== */
+                @media (min-width: 769px) {
+                    .why-section {
+                        padding: 60px 40px;
+                        /* প্যাডিং অনেক বাড়ানো হলো */
+                        margin: 50px auto;
+                        max-width: 1100px;
+                        /* সেকশনটি আরও চওড়া করা হলো */
+                        border-radius: 40px;
+                        /* বর্ডার রেডিয়াস বড় করা হলো */
+                    }
+
+                    .why-title {
+                        font-size: 2.5rem;
+                        /* টাইটেল বড় করা হলো */
+                        margin-bottom: 40px;
+                    }
+
+                    .why-list {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        /* লেখাগুলো ডেস্কটপে ২ কলামে সাজানো হবে */
+                        gap: 20px;
+                        max-width: 100%;
+                    }
+
+                    .why-item {
+                        font-size: 1.25rem;
+                        /* লেখার সাইজ বড় করা হলো */
+                        padding: 20px 24px;
+                        /* বক্সের ভেতরের প্যাডিং বড় করা হলো */
+                        border-radius: 20px;
+                        align-items: center;
+                        /* আইকন ও টেক্সট মাঝখানে রাখার জন্য */
+                    }
+
+                    .why-item::before {
+                        font-size: 2.5rem;
+                        /* বুলেটের সাইজ বড় করা হলো */
+                    }
+                }
             }
-        }
-}
     </style>
 </head>
+
 <body>
 
-<!-- Header -->
-<header class="header">
-    <div class="container header-inner">
-        <a href="https://facebook.com/boigolpo.com" target="_blank" class="logo-area">
-             <img src="logo.png" alt="BoiGolpo Logo" style="width: 40px; height: 35px; border-radius: 10px; object-fit: cover;">
-            <div class="logo-text">BoiGolpo <span>Bookshop</span></div>
-        </a>
-        <a href="#order-form" class="header-order-btn">অর্ডার করুন</a>
-    </div>
-</header>
-
-<!-- Main Wrapper -->
-<main class="container">
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-left">
-            <div class="hero-badge">বেস্ট সেলার ৪টি বইয়ের কম্বো প্যাকেজ</div>
-            <h1 class="hero-title">মাত্র ২৮৫ টাকায় সংগ্রহ করুন বাংলা সাহিত্যের বিখ্যাত ৪টি উপন্যাসের বই!</h1>
-            <p class="hero-sub">পরিণীতা, শেষের কবিতা, দেবদাস ও চাঁদের পাহাড় - চারটি ভিন্ন ভিন্ন জনরার বই রয়েছে এই প্যাকেজে!</p>
-            <div class="price-area">
-                <span class="old-price">মলাট মূল্য ৯৭৫ টাকা</span>
-                <span class="new-price">অফার মূল্য ২৮৫ টাকা</span>
-            </div>
-            <div class="hero-cta-group">
-                <a href="#order-form" class="btn-primary">অর্ডার করুন</a>
-                <a href="#books" class="btn-secondary">বইগুলো দেখে নিন</a>
-            </div>
-        </div>
-        <div class="hero-right">
-           <img src="hero-image.jpg" alt="৪টি বইয়ের কম্বো প্যাকেজ" class="product-image">
-        </div>
-    </section>
-
-    <!-- Book Showcase Section -->
-    <div id="books">
-        <h2 class="section-title center-text">বইগুলো সম্পর্কে জেনে নিন</h2>
-        <p class="section-sub center-text">চারটি বইয়ের আলাদা আলাদা করে ডিটেইলস দেয়া হলো</p>
-
-        <div class="books-grid">
-            <div class="book-card">
-                <div class="book-cover-placeholder" style="background-image: url('parineeta.jpg');"></div>
-                <div class="book-title">পরিণীতা <span class="paperback">(পেপারব্যাক)</span></div>
-                <div class="book-author">লেখক: শরৎচন্দ্র চট্টোপাধ্যায়</div>
-                <div class="book-snippet">বিংশ শতাব্দীর প্রথম সময়ের ভারতের কলকাতার পটভূমিতে রচিত এই উপন্যাস। আমাদের অতিপরিচিত প্রত্যহিক সুখ-দুঃখের জীবনকে...</div>
-                <button class="read-more-btn" data-book="book1">read more</button>
-            </div>
-
-            <div class="book-card">
-                <div class="book-cover-placeholder" style="background-image: url('shesher-kobita.jpg');"></div>
-                <div class="book-title">শেষের কবিতা <span class="paperback">(পেপারব্যাক)</span></div>
-                <div class="book-author">লেখক: রবীন্দ্রনাথ ঠাকুর</div>
-                <div class="book-snippet">'শেষের কবিতা' নামটা শুনলে কবিতার বই মনে হতে পারে, কিন্তু এটি আসলে একটি উপন্যাস, যার...</div>
-                <button class="read-more-btn" data-book="book2">read more</button>
-            </div>
-
-            <div class="book-card">
-                <div class="book-cover-placeholder" style="background-image: url('devdas.jpg');"></div>
-                <div class="book-title">দেবদাস <span class="paperback">(পেপারব্যাক)</span></div>
-                <div class="book-author">লেখক: শরৎচন্দ্র চট্টোপাধ্যায়</div>
-                <div class="book-snippet">শরৎচন্দ্র চট্টোপাধ্যায়ের কালজয়ী উপন্যাস 'দেবদাস' এর নাম শুনেনি, এমন পাঠক বোধহয় খুব কমই আছে। এই উপন্যাসটিকে...</div>
-                <button class="read-more-btn" data-book="book3">read more</button>
-            </div>
-
-            <div class="book-card">
-                <div class="book-cover-placeholder" style="background-image: url('chander-pahar.jpg');"></div>
-                <div class="book-title">চাঁদের পাহাড় <span class="paperback">(পেপারব্যাক)</span></div>
-                <div class="book-author">লেখক: বিভূতিভূষণ বন্দ্যোপাধ্যায়</div>
-                <div class="book-snippet">"মানুষের আয়ু মানুষের জীবনের ভুল মাপকাঠি। দশ বছরের জীবন সে উপভোগ করেছে দেড় বছরে।" দুঃসাহসিক অভিযানের স্বাদ পেতে...</div>
-                <button class="read-more-btn" data-book="book4">read more</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Offer Section -->
-    <div class="offer-card">
-        <h3 class="offer-headline">অফারে যা যা থাকছে এবং ডিটেইলস</h3>
-        <ul class="offer-list">
-            <li>পরিণীতা</li>
-            <li>শেষের কবিতা</li>
-            <li>দেবদাস</li>
-            <li>চাঁদের পাহাড়</li>
-        </ul>
-        <div class="detail-grid">
-            <span>ক্রাউন সাইজ</span>
-            <span>পেপারব্যাক</span>
-            <span>প্রিমিয়াম প্রিন্ট</span>
-            <span>অফ হোয়াইট প্রিমিয়াম কাগজ (70 GSM)</span>
-        </div>
-        <div class="offer-price"> <small> চারটি বই একসাথে মাত্র </small> ২৮৫ <small> টাকা </small> </div>
-        <div class="center-btn">
-            <a href="#order-form" class="btn-primary">এখনই অর্ডার করুন</a>
-        </div>
-    </div>
-
-    <!-- Why Section -->
-    <div class="why-section">
-        <h3 class="why-title">কেন এই বইয়ের কম্বোটি বেছে নেবেন?</h3>
-        <div class="why-list">
-            <div class="why-item">বাংলা সাহিত্যের বিখ্যাত চারটি বই সুলভ মূল্যে একসঙ্গে সংগ্রহ করার সুযোগ</div>
-            <div class="why-item">ভিন্ন ভিন্ন জনরার চিরায়ত বইয়ের একটি সুন্দর সংযোজন</div>
-            <div class="why-item">প্রেম, ভালোবাসা, সামাজিক জীবন, রহস্য, গোয়েন্দা, থ্রিলার ও অ্যাডভেঞ্চার</div>
-            <div class="why-item">ক্রাউন সাইজের বই, তাই পড়তে ও বহন করতে কোনো ঝামেলা নেই</div>
-            <div class="why-item">বন্ধু কিংবা পরিবারের সদস্যকে উপহার দেওয়ার জন্য সেরা ডিল</div>
-            <div class="why-item">বইগুলোতে রয়েছে সেলাই বাইন্ডিং ও প্রিমিয়াম অফ হোয়াইট কাগজ (70 GSM) </div>
-        </div>
-    </div>
-
-    <!-- Order Form Section -->
-    <div class="order-section" id="order-form">
-        <h2 class="order-headline">অর্ডার করতে ফর্মটি পূরণ করুন</h2>
-        <p class="order-subheadline">ক্যাশ অন ডেলিভারিতে অর্ডার করুন!</p>
-
-        <div class="order-flex">
-            <div class="order-form">
-                <form id="orderForm" novalidate>
-                    <div class="form-group">
-                        <label>আপনার নাম <span class="required-star">*</span></label>
-                        <input type="text" id="customerName" placeholder="আপনার সম্পূর্ণ নাম লিখুন">
-                        <small class="field-error" id="error-name">অনুগ্রহ করে আপনার নাম লিখুন।</small>
-                    </div>
-                    <div class="form-group">
-                        <label>ফোন নাম্বার <span class="required-star">*</span></label>
-                        <input type="tel" id="customerPhone" placeholder="মোবাইল নাম্বার লিখুন (018XXXXXXXX)">
-                        <small class="field-error" id="error-phone">অনুগ্রহ করে বৈধ ফোন নাম্বার লিখুন (যেমন: 017XXXXXXXX)।</small>
-                    </div>
-                    <div class="form-group">
-                        <label>সম্পূর্ণ ঠিকানা <span class="required-star">*</span></label>
-                        <textarea id="customerAddress" placeholder="বাসার সম্পূর্ণ ঠিকানা দিন (বাসা/হোল্ডিং নম্বর, রোড, এলাকা, থানা, জেলা)"></textarea>
-                        <small class="field-error" id="error-address">অনুগ্রহ করে সম্পূর্ণ ঠিকানা লিখুন।</small>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group quantity-group">
-                            <label>পরিমাণ <span class="required-star">*</span></label>
-                            <select id="quantitySelect">
-                                <option value="1">১ সেট</option>
-                                <option value="2">২ সেট</option>
-                                <option value="3">৩ সেট</option>
-                                <option value="4">৪ সেট</option>
-                                <option value="5">৫ সেট</option>
-                            </select>
-                        </div>
-                        <div class="form-group delivery-group">
-                            <label>ডেলিভারি এলাকা <span class="required-star">*</span></label>
-                            <div class="radio-group">
-                                <label class="radio-option" id="dhakaOption">
-                                    <input type="radio" name="delivery" value="inside"> ঢাকার ভেতরে ৬০ টাকা
-                                </label>
-                                <label class="radio-option" id="outsideOption">
-                                    <input type="radio" name="delivery" value="outside"> ঢাকার বাইরে ১০০ টাকা
-                                </label>
-                            </div>
-                            <small class="field-error" id="error-delivery">অনুগ্রহ করে ডেলিভারি এলাকা নির্বাচন করুন।</small>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>অর্ডার নোট (ঐচ্ছিক)</label>
-                        <textarea id="orderNote" placeholder="কোনো বিশেষ নির্দেশনা থাকলে লিখুন"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">অর্ডার কনফার্ম করুন</button>
-                    <div id="global-error" class="global-error-box"></div>
-                </form>
-            </div>
-            <div class="order-summary" id="orderSummary">
-                <div class="summary-title">অর্ডার সামারি</div>
-                <div class="summary-row">
-                    <span class="label">প্যাকেজ মূল্য:</span>
-                    <span class="value" id="summaryPackagePrice">২৮৫ টাকা</span>
-                </div>
-                <div class="summary-row">
-                    <span class="label">পরিমাণ:</span>
-                    <span class="value" id="summaryQuantity">১ সেট</span>
-                </div>
-                <div class="summary-row">
-                    <span class="label">ডেলিভারি চার্জ:</span>
-                    <span class="value" id="summaryDelivery">৬০ টাকা</span>
-                </div>
-                <div class="summary-total">
-                    <span>সর্বমোট:</span>
-                    <span id="summaryTotal">৩৪৫ টাকা</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="contact-section">
-        <h2 class="contact-title">কোনো প্রশ্ন আছে?</h2>
-        <p class="contact-sub"><strong>কিংবা অফারের কোনো বই অলরেডি সংগ্রহে আছে, তাই এক্সচেঞ্জ করতে চাচ্ছেন?</strong><br>সরাসরি আমাদের সাথে যোগাযোগ করুন</p>
-        <div class="contact-btns">
-            <a href="https://facebook.com/boigolpo.com" target="_blank" class="contact-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
-            <a href="https://wa.me/8801977933646" target="_blank" class="contact-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        </div>
-    </div>
-
-</main>
-
-<!-- Modal Popup -->
-<div class="modal-overlay" id="bookModal">
-    <div class="modal-content">
-        <button class="modal-close" id="modalClose">&times;</button>
-        <div id="modalBody"></div>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="footer-content container">
-        <div>
-            <a href="https://facebook.com/boigolpo.com" target="_blank" class="footer-logo">
-               <img src="logo.png" alt="BoiGolpo Logo" style="width: 50px; height: 45px; border-radius: 8px; object-fit: cover; background: blank; padding: 2px;">
-                <div class="logo-text" style="color: #eef1f3;">বইগল্প বুকশপ</div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="https://facebook.com/boigolpo.com" target="_blank" class="logo-area">
+                <img src="logo.png" alt="BoiGolpo Logo"
+                    style="width: 40px; height: 35px; border-radius: 10px; object-fit: cover;">
+                <div class="logo-text">BoiGolpo <span>Bookshop</span></div>
             </a>
-            <p class="footer-slogan">বাংলা সাহিত্যের সেরা বইগুলো আপনার ব্যক্তিগত লাইব্রেরিতে পৌঁছে দিতে আমরা প্রতিশ্রুতিবদ্ধ!</p>
+            <a href="#order-form" class="header-order-btn">অর্ডার করুন</a>
         </div>
-        <div class="footer-contact">
-            <strong style="color: #A5AFB1;">যোগাযোগ</strong>
-            <span>ফোন: 01977933646</span>
-            <span>ইমেইল: boigolpo.bookshop@gmail.com</span>
-            <span>ঠিকানা: 38/2/Kha, Banglabazar Book Market, Dhaka-1100</span>
+    </header>
+
+    <!-- Main Wrapper -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-left">
+                <div class="hero-badge">বেস্ট সেলার ৪টি বইয়ের কম্বো প্যাকেজ</div>
+                <h1 class="hero-title">মাত্র ২৮৫ টাকায় সংগ্রহ করুন বাংলা সাহিত্যের বিখ্যাত ৪টি উপন্যাসের বই!</h1>
+                <p class="hero-sub">পরিণীতা, শেষের কবিতা, দেবদাস ও চাঁদের পাহাড় - চারটি ভিন্ন ভিন্ন জনরার বই রয়েছে এই
+                    প্যাকেজে!</p>
+                <div class="price-area">
+                    <span class="old-price">মলাট মূল্য ৯৭৫ টাকা</span>
+                    <span class="new-price">অফার মূল্য ২৮৫ টাকা</span>
+                </div>
+                <div class="hero-cta-group">
+                    <a href="#order-form" class="btn-primary">অর্ডার করুন</a>
+                    <a href="#books" class="btn-secondary">বইগুলো দেখে নিন</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="hero-image.jpg" alt="৪টি বইয়ের কম্বো প্যাকেজ" class="product-image">
+            </div>
+        </section>
+
+        <!-- Book Showcase Section -->
+        <div id="books">
+            <h2 class="section-title center-text">বইগুলো সম্পর্কে জেনে নিন</h2>
+            <p class="section-sub center-text">চারটি বইয়ের আলাদা আলাদা করে ডিটেইলস দেয়া হলো</p>
+
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover-placeholder" style="background-image: url('parineeta.jpg');"></div>
+                    <div class="book-title">পরিণীতা <span class="paperback">(পেপারব্যাক)</span></div>
+                    <div class="book-author">লেখক: শরৎচন্দ্র চট্টোপাধ্যায়</div>
+                    <div class="book-snippet">বিংশ শতাব্দীর প্রথম সময়ের ভারতের কলকাতার পটভূমিতে রচিত এই উপন্যাস। আমাদের
+                        অতিপরিচিত প্রত্যহিক সুখ-দুঃখের জীবনকে...</div>
+                    <button class="read-more-btn" data-book="book1">read more</button>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover-placeholder" style="background-image: url('shesher-kobita.jpg');"></div>
+                    <div class="book-title">শেষের কবিতা <span class="paperback">(পেপারব্যাক)</span></div>
+                    <div class="book-author">লেখক: রবীন্দ্রনাথ ঠাকুর</div>
+                    <div class="book-snippet">'শেষের কবিতা' নামটা শুনলে কবিতার বই মনে হতে পারে, কিন্তু এটি আসলে একটি
+                        উপন্যাস, যার...</div>
+                    <button class="read-more-btn" data-book="book2">read more</button>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover-placeholder" style="background-image: url('devdas.jpg');"></div>
+                    <div class="book-title">দেবদাস <span class="paperback">(পেপারব্যাক)</span></div>
+                    <div class="book-author">লেখক: শরৎচন্দ্র চট্টোপাধ্যায়</div>
+                    <div class="book-snippet">শরৎচন্দ্র চট্টোপাধ্যায়ের কালজয়ী উপন্যাস 'দেবদাস' এর নাম শুনেনি, এমন পাঠক
+                        বোধহয় খুব কমই আছে। এই উপন্যাসটিকে...</div>
+                    <button class="read-more-btn" data-book="book3">read more</button>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover-placeholder" style="background-image: url('chander-pahar.jpg');"></div>
+                    <div class="book-title">চাঁদের পাহাড় <span class="paperback">(পেপারব্যাক)</span></div>
+                    <div class="book-author">লেখক: বিভূতিভূষণ বন্দ্যোপাধ্যায়</div>
+                    <div class="book-snippet">"মানুষের আয়ু মানুষের জীবনের ভুল মাপকাঠি। দশ বছরের জীবন সে উপভোগ করেছে
+                        দেড় বছরে।" দুঃসাহসিক অভিযানের স্বাদ পেতে...</div>
+                    <button class="read-more-btn" data-book="book4">read more</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer Section -->
+        <div class="offer-card">
+            <h3 class="offer-headline">অফারে যা যা থাকছে এবং ডিটেইলস</h3>
+            <ul class="offer-list">
+                <li>পরিণীতা</li>
+                <li>শেষের কবিতা</li>
+                <li>দেবদাস</li>
+                <li>চাঁদের পাহাড়</li>
+            </ul>
+            <div class="detail-grid">
+                <span>ক্রাউন সাইজ</span>
+                <span>পেপারব্যাক</span>
+                <span>প্রিমিয়াম প্রিন্ট</span>
+                <span>অফ হোয়াইট প্রিমিয়াম কাগজ (70 GSM)</span>
+            </div>
+            <div class="offer-price"> <small> চারটি বই একসাথে মাত্র </small> ২৮৫ <small> টাকা </small> </div>
+            <div class="center-btn">
+                <a href="#order-form" class="btn-primary">এখনই অর্ডার করুন</a>
+            </div>
+        </div>
+
+        <!-- Why Section -->
+        <div class="why-section">
+            <h3 class="why-title">কেন এই বইয়ের কম্বোটি বেছে নেবেন?</h3>
+            <div class="why-list">
+                <div class="why-item">বাংলা সাহিত্যের বিখ্যাত চারটি বই সুলভ মূল্যে একসঙ্গে সংগ্রহ করার সুযোগ</div>
+                <div class="why-item">ভিন্ন ভিন্ন জনরার চিরায়ত বইয়ের একটি সুন্দর সংযোজন</div>
+                <div class="why-item">প্রেম, ভালোবাসা, সামাজিক জীবন, রহস্য, গোয়েন্দা, থ্রিলার ও অ্যাডভেঞ্চার</div>
+                <div class="why-item">ক্রাউন সাইজের বই, তাই পড়তে ও বহন করতে কোনো ঝামেলা নেই</div>
+                <div class="why-item">বন্ধু কিংবা পরিবারের সদস্যকে উপহার দেওয়ার জন্য সেরা ডিল</div>
+                <div class="why-item">বইগুলোতে রয়েছে সেলাই বাইন্ডিং ও প্রিমিয়াম অফ হোয়াইট কাগজ (70 GSM) </div>
+            </div>
+        </div>
+
+        <!-- Order Form Section -->
+        <div class="order-section" id="order-form">
+            <h2 class="order-headline">অর্ডার করতে ফর্মটি পূরণ করুন</h2>
+            <p class="order-subheadline">ক্যাশ অন ডেলিভারিতে অর্ডার করুন!</p>
+
+            <div class="order-flex">
+                <div class="order-form">
+                    <form id="orderForm" novalidate>
+                        <div class="form-group">
+                            <label>আপনার নাম <span class="required-star">*</span></label>
+                            <input type="text" id="customerName" placeholder="আপনার সম্পূর্ণ নাম লিখুন">
+                            <small class="field-error" id="error-name">অনুগ্রহ করে আপনার নাম লিখুন।</small>
+                        </div>
+                        <div class="form-group">
+                            <label>ফোন নাম্বার <span class="required-star">*</span></label>
+                            <input type="tel" id="customerPhone" placeholder="মোবাইল নাম্বার লিখুন (018XXXXXXXX)">
+                            <small class="field-error" id="error-phone">অনুগ্রহ করে বৈধ ফোন নাম্বার লিখুন (যেমন:
+                                017XXXXXXXX)।</small>
+                        </div>
+                        <div class="form-group">
+                            <label>সম্পূর্ণ ঠিকানা <span class="required-star">*</span></label>
+                            <textarea id="customerAddress"
+                                placeholder="বাসার সম্পূর্ণ ঠিকানা দিন (বাসা/হোল্ডিং নম্বর, রোড, এলাকা, থানা, জেলা)"></textarea>
+                            <small class="field-error" id="error-address">অনুগ্রহ করে সম্পূর্ণ ঠিকানা লিখুন।</small>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group quantity-group">
+                                <label>পরিমাণ <span class="required-star">*</span></label>
+                                <select id="quantitySelect">
+                                    <option value="1">১ সেট</option>
+                                    <option value="2">২ সেট</option>
+                                    <option value="3">৩ সেট</option>
+                                    <option value="4">৪ সেট</option>
+                                    <option value="5">৫ সেট</option>
+                                </select>
+                            </div>
+                            <div class="form-group delivery-group">
+                                <label>ডেলিভারি এলাকা <span class="required-star">*</span></label>
+                                <div class="radio-group">
+                                    <label class="radio-option" id="dhakaOption">
+                                        <input type="radio" name="delivery" value="inside"> ঢাকার ভেতরে ৬০ টাকা
+                                    </label>
+                                    <label class="radio-option" id="outsideOption">
+                                        <input type="radio" name="delivery" value="outside"> ঢাকার বাইরে ১০০ টাকা
+                                    </label>
+                                </div>
+                                <small class="field-error" id="error-delivery">অনুগ্রহ করে ডেলিভারি এলাকা নির্বাচন
+                                    করুন।</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>অর্ডার নোট (ঐচ্ছিক)</label>
+                            <textarea id="orderNote" placeholder="কোনো বিশেষ নির্দেশনা থাকলে লিখুন"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">অর্ডার কনফার্ম করুন</button>
+                        <div id="global-error" class="global-error-box"></div>
+                    </form>
+                </div>
+                <div class="order-summary" id="orderSummary">
+                    <div class="summary-title">অর্ডার সামারি</div>
+                    <div class="summary-row">
+                        <span class="label">প্যাকেজ মূল্য:</span>
+                        <span class="value" id="summaryPackagePrice">২৮৫ টাকা</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="label">পরিমাণ:</span>
+                        <span class="value" id="summaryQuantity">১ সেট</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="label">ডেলিভারি চার্জ:</span>
+                        <span class="value" id="summaryDelivery">৬০ টাকা</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>সর্বমোট:</span>
+                        <span id="summaryTotal">৩৪৫ টাকা</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2 class="contact-title">কোনো প্রশ্ন আছে?</h2>
+            <p class="contact-sub"><strong>কিংবা অফারের কোনো বই অলরেডি সংগ্রহে আছে, তাই এক্সচেঞ্জ করতে
+                    চাচ্ছেন?</strong><br>সরাসরি আমাদের সাথে যোগাযোগ করুন</p>
+            <div class="contact-btns">
+                <a href="https://facebook.com/boigolpo.com" target="_blank" class="contact-btn"><i
+                        class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://wa.me/8801977933646" target="_blank" class="contact-btn whatsapp"><i
+                        class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal Popup -->
+    <div class="modal-overlay" id="bookModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalBody"></div>
         </div>
     </div>
-    <div class="copyright container">
-        © 2026 BoiGolpo Bookshop. All rights reserved.
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content container">
+            <div>
+                <a href="https://facebook.com/boigolpo.com" target="_blank" class="footer-logo">
+                    <img src="logo.png" alt="BoiGolpo Logo"
+                        style="width: 50px; height: 45px; border-radius: 8px; object-fit: cover; background: blank; padding: 2px;">
+                    <div class="logo-text" style="color: #eef1f3;">বইগল্প বুকশপ</div>
+                </a>
+                <p class="footer-slogan">বাংলা সাহিত্যের সেরা বইগুলো আপনার ব্যক্তিগত লাইব্রেরিতে পৌঁছে দিতে আমরা
+                    প্রতিশ্রুতিবদ্ধ!</p>
+            </div>
+            <div class="footer-contact">
+                <strong style="color: #A5AFB1;">যোগাযোগ</strong>
+                <span>ফোন: 01977933646</span>
+                <span>ইমেইল: boigolpo.bookshop@gmail.com</span>
+                <span>ঠিকানা: 38/2/Kha, Banglabazar Book Market, Dhaka-1100</span>
+            </div>
+        </div>
+        <div class="copyright container">
+            © 2026 BoiGolpo Bookshop. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Thank You Animated Modal -->
+    <div class="thankyou-overlay" id="thankYouModal">
+        <div class="thankyou-card">
+            <div class="success-checkmark">
+                <i class="fas fa-check"></i>
+            </div>
+            <h2 class="thankyou-title">অর্ডার সফল হয়েছে!</h2>
+            <p class="thankyou-subtitle">আপনার অর্ডারটি আমরা সফলভাবে পেয়েছি। শীঘ্রই আমাদের একজন প্রতিনিধি আপনার সাথে
+                যোগাযোগ করবেন।</p>
+
+            <div class="order-id-box">
+                অর্ডার আইডি: <span id="displayOrderId">BGB-1646</span>
+            </div>
+
+            <p style="font-size: 0.85rem; color: #687B86; margin-bottom: 10px;">যেকোনো প্রয়োজনে আমাদের সাথে যোগাযোগ
+                করুন</p>
+
+            <div class="social-links">
+                <a href="https://facebook.com/boigolpo.com" target="_blank" class="fb" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/boigolpo.bookshop" target="_blank" class="insta"
+                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/8801977933646" target="_blank" class="wa" aria-label="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
     </div>
-</footer>
 
-<!-- Thank You Animated Modal -->
-<div class="thankyou-overlay" id="thankYouModal">
-    <div class="thankyou-card">
-        <div class="success-checkmark">
-            <i class="fas fa-check"></i>
-        </div>
-        <h2 class="thankyou-title">অর্ডার সফল হয়েছে!</h2>
-        <p class="thankyou-subtitle">আপনার অর্ডারটি আমরা সফলভাবে পেয়েছি। শীঘ্রই আমাদের একজন প্রতিনিধি আপনার সাথে যোগাযোগ করবেন।</p>
-        
-        <div class="order-id-box">
-            অর্ডার আইডি: <span id="displayOrderId">BGB-1646</span>
-        </div>
-        
-        <p style="font-size: 0.85rem; color: #687B86; margin-bottom: 10px;">যেকোনো প্রয়োজনে আমাদের সাথে যোগাযোগ করুন</p>
-        
-        <div class="social-links">
-            <a href="https://facebook.com/boigolpo.com" target="_blank" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://instagram.com/boigolpo.bookshop" target="_blank" class="insta" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/8801977933646" target="_blank" class="wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        </div>
-    </div>
-</div>
-
-<script>
-    // ========== BOOK DATA ==========
-    const bookData = {
-        book1: {
-            title: "পরিণীতা (পেপারব্যাক)",
-            image: "parineeta.jpg",
-            author: "শরৎচন্দ্র চট্টোপাধ্যায়",
-            publisher: "প্রিমিয়াম পাবলিকেশন্স",
-            category: "চিরায়ত উপন্যাস",
-            summary: "বিংশ শতাব্দীর প্রথম সময়ের ভারতের কলকাতার পটভূমিতে রচিত এই উপন্যাস। আমাদের অতিপরিচিত প্রত্যহিক সুখ-দুঃখের জীবনকে শরৎচন্দ্র চট্টোপাধ্যায় এমন কৌশলে পাঠকদের সামনে হাজির করেন যে পাঠক নিজের অজান্তেই সেই জীবনের সহযাত্রী হয়ে উঠে। এমনই একটি উপন্যাস 'পরিণীতা', যার মূল বিষয়বস্তু হলো যন্ত্রণাকাতর দুঃসহ কেরানিজীবন। ষাট টাকা মাসিক বেতনের কন্যাদায়গ্রস্ত অসহায় ব্যাংক-কেরানি গুরুচরণের জীবনকাহিনী চিত্রিত হয়েছে উপন্যাসটিতে। এছাড়াও রয়েছে ললিতা, শেখর আর গিরিনের সম্পর্কের টানাপোড়েন, যার মাধ্যমে লেখক মানবমনের ইন্দ্রিয়বৃত্তের দ্বন্দ্বের রূপ দেখিয়েছেন। শরৎচন্দ্র এখানে ঘটিয়েছেন ইতিহাসের প্রেক্ষাপটে রাষ্ট্র, সমাজ ও সমকালকে ধারণ করা এমনি এক চিত্রায়ণ, যা সহজেই পাঠক এবং সমালোচককে আকৃষ্ট করে।",
-            specs: {
-                "Name": "পরিণীতা",
-                "Category": "চিরায়ত উপন্যাস",
-                "Author": "শরৎচন্দ্র চট্টোপাধ্যায়",
-                "Edition": "১ম সংস্করণ",
-                "No of Page": "96",
-                "Language": "বাংলা",
-                "Publisher": "প্রিমিয়াম পাবলিকেশন্স",
-                "Country": "বাংলাদেশ"
+    <script>
+        // ========== BOOK DATA ==========
+        const bookData = {
+            book1: {
+                title: "পরিণীতা (পেপারব্যাক)",
+                image: "parineeta.jpg",
+                author: "শরৎচন্দ্র চট্টোপাধ্যায়",
+                publisher: "প্রিমিয়াম পাবলিকেশন্স",
+                category: "চিরায়ত উপন্যাস",
+                summary: "বিংশ শতাব্দীর প্রথম সময়ের ভারতের কলকাতার পটভূমিতে রচিত এই উপন্যাস। আমাদের অতিপরিচিত প্রত্যহিক সুখ-দুঃখের জীবনকে শরৎচন্দ্র চট্টোপাধ্যায় এমন কৌশলে পাঠকদের সামনে হাজির করেন যে পাঠক নিজের অজান্তেই সেই জীবনের সহযাত্রী হয়ে উঠে। এমনই একটি উপন্যাস 'পরিণীতা', যার মূল বিষয়বস্তু হলো যন্ত্রণাকাতর দুঃসহ কেরানিজীবন। ষাট টাকা মাসিক বেতনের কন্যাদায়গ্রস্ত অসহায় ব্যাংক-কেরানি গুরুচরণের জীবনকাহিনী চিত্রিত হয়েছে উপন্যাসটিতে। এছাড়াও রয়েছে ললিতা, শেখর আর গিরিনের সম্পর্কের টানাপোড়েন, যার মাধ্যমে লেখক মানবমনের ইন্দ্রিয়বৃত্তের দ্বন্দ্বের রূপ দেখিয়েছেন। শরৎচন্দ্র এখানে ঘটিয়েছেন ইতিহাসের প্রেক্ষাপটে রাষ্ট্র, সমাজ ও সমকালকে ধারণ করা এমনি এক চিত্রায়ণ, যা সহজেই পাঠক এবং সমালোচককে আকৃষ্ট করে।",
+                specs: {
+                    "Name": "পরিণীতা",
+                    "Category": "চিরায়ত উপন্যাস",
+                    "Author": "শরৎচন্দ্র চট্টোপাধ্যায়",
+                    "Edition": "১ম সংস্করণ",
+                    "No of Page": "96",
+                    "Language": "বাংলা",
+                    "Publisher": "প্রিমিয়াম পাবলিকেশন্স",
+                    "Country": "বাংলাদেশ"
+                }
+            },
+            book2: {
+                title: "শেষের কবিতা (পেপারব্যাক)",
+                image: "shesher-kobita.jpg",
+                author: "রবীন্দ্রনাথ ঠাকুর",
+                publisher: "প্রিমিয়াম পাবলিকেশন্স",
+                category: "চিরায়ত উপন্যাস",
+                summary: "'শেষের কবিতা' নামটা শুনলে কবিতার বই মনে হতে পারে, কিন্তু এটি আসলে একটি উপন্যাস, যার লেখক কবিগুরু রবীন্দ্রনাথ ঠাকুর। রোমান্টিক ধরনের এই উপন্যাসটি বিখ্যাত এর চমকপ্রদ প্লটের কারণে। উপন্যাসটির দুইটি মূল চরিত্র বিত্তবান পরিবারের ছেলে অমিত রায় এবং মধ্যবিত্ত পরিবারের মেয়ে লাবণ্য লতা। এছাড়াও রয়েছে দুইটি পার্শ্বচরিত্র শোভনলাল এবং কেতকী। দুই বিপরীতধর্মী মূল চরিত্রের মাঝে যখনই প্রণয় সৃষ্টি হয়, তখনই আবির্ভাব ঘটে এই দুই পার্শ্বচরিত্রের, এবং তারা গুরুত্বপূর্ণ চরিত্রতে পরিণত হয়ে উঠে। নান্দনিক শব্দের ব্যবহার বইটিকে করে তুলেছে আরো চমকপ্রদ।",
+                specs: {
+                    "Name": "শেষের কবিতা",
+                    "Category": "চিরায়ত উপন্যাস",
+                    "Author": "রবীন্দ্রনাথ ঠাকুর",
+                    "Edition": "১ম সংস্করণ",
+                    "No of Page": "144",
+                    "Language": "বাংলা",
+                    "Publisher": "প্রিমিয়াম পাবলিকেশন্স",
+                    "Country": "বাংলাদেশ"
+                }
+            },
+            book3: {
+                title: "দেবদাস (পেপারব্যাক)",
+                image: "devdas.jpg",
+                author: "শরৎচন্দ্র চট্টোপাধ্যায়",
+                publisher: "প্রিমিয়াম পাবলিকেশন্স",
+                category: "চিরায়ত উপন্যাস",
+                summary: "শরৎচন্দ্র চট্টোপাধ্যায়ের কালজয়ী উপন্যাস 'দেবদাস' এর নাম শুনেনি, এমন পাঠক বোধহয় খুব কমই আছে। এই উপন্যাসটিকে প্রণয়কালীন ট্র্যাজেডি বললে খুব একটা ভুল হবে না। তৎকালীন সামাজিক বৈষম্য এবং আত্ম-অহংকারী চেতনার ফলে দুটি জীবনের এক না হওয়ার নির্মম পরিণতি এই উপন্যাসটির মূল বিষয়বস্তু। ঊনবিংশ শতাব্দীর সামাজিক চিত্র, কুসংস্কার, প্রথা ধরে রাখার রীতি, বিলেত যাওয়ার প্রবণতা, বিশেষ করে উচ্চ ও নিম্নবিত্ত ভেদাভেদের কারণে প্রেমে অপূর্ণতা; সবকিছু মিলিয়ে তখনকার সমাজের একটি সুস্পষ্ট চিত্র রয়েছে উপন্যাসটিতে। দেবদাস হয়তো চাইলেই পারতো পার্বতীকে গ্রহন করতে, কিন্তু সমাজ-বৈষম্য সংস্কারের বাধা অতিক্রম করা তার জন্যে অসম্ভব ছিল, পরিশেষে সে পরিণত হলো বিরহকাতর এক প্রেমিকে।",
+                specs: {
+                    "Name": "দেবদাস",
+                    "Category": "চিরায়ত উপন্যাস",
+                    "Author": "শরৎচন্দ্র চট্টোপাধ্যায়",
+                    "Edition": "১ম সংস্করণ",
+                    "No of Page": "144",
+                    "Language": "বাংলা",
+                    "Publisher": "প্রিমিয়াম পাবলিকেশন্স",
+                    "Country": "বাংলাদেশ"
+                }
+            },
+            book4: {
+                title: "চাঁদের পাহাড় (পেপারব্যাক)",
+                image: "chander-pahar.jpg",
+                author: "বিভূতিভূষণ বন্দ্যোপাধ্যায়",
+                publisher: "প্রিমিয়াম পাবলিকেশন্স",
+                category: "রহস্য, গোয়েন্দা, থ্রিলার ও অ্যাডভেঞ্চার",
+                summary: "\"মানুষের আয়ু মানুষের জীবনের ভুল মাপকাঠি। দশ বছরের জীবন সে উপভোগ করেছে দেড় বছরে।\" দুঃসাহসিক অভিযানের স্বাদ পেতে চাঁদের পাহাড় বইটির জুড়ি নেই। শম্কর নামক ভারতীয় এক তরুণের আফ্রিকা মহাদেশের রোমাঞ্চকর অভিযান বইয়ের মূল প্লট। আফ্রিকার বিভিন্ন অঞ্চলের ভৌগোলিক স্থান, ভয়ংকর প্রাণী ও প্রাকৃতিক দৃশ্যের বাস্তব রূপ চিত্রায়িত করা হয়েছে উপন্যাসটিতে। রুদ্ধশ্বাস অভিযান, লোমহর্ষক ঘটনাক্রম, কষ্ট, সাহস, বীরত্ব, আর বন্ধুত্বের নানা উদাহরণ সৃষ্টির মাধ্যমে এগিয়ে যেতে থাকে উপন্যাসের কাহিনী। বাংলা ভাষার জনপ্রিয় এই উপন্যাসটি ছোট থেকে বড় প্রত্যেকের মধ্যেই সৃষ্টি করে রোমাঞ্চকর এক অনুভূতি।",
+                specs: {
+                    "Name": "চাঁদের পাহাড়",
+                    "Category": "বয়স যখন ১২-১৭: রহস্য, গোয়েন্দা, থ্রিলার ও অ্যাডভেঞ্চার",
+                    "Author": "বিভূতিভূষণ বন্দ্যোপাধ্যায়",
+                    "Edition": "১ম সংস্করণ",
+                    "No of Page": "128",
+                    "Language": "বাংলা",
+                    "Publisher": "প্রিমিয়াম পাবলিকেশন্স",
+                    "Country": "বাংলাদেশ"
+                }
             }
-        },
-        book2: {
-            title: "শেষের কবিতা (পেপারব্যাক)",
-            image: "shesher-kobita.jpg",
-            author: "রবীন্দ্রনাথ ঠাকুর",
-            publisher: "প্রিমিয়াম পাবলিকেশন্স",
-            category: "চিরায়ত উপন্যাস",
-            summary: "'শেষের কবিতা' নামটা শুনলে কবিতার বই মনে হতে পারে, কিন্তু এটি আসলে একটি উপন্যাস, যার লেখক কবিগুরু রবীন্দ্রনাথ ঠাকুর। রোমান্টিক ধরনের এই উপন্যাসটি বিখ্যাত এর চমকপ্রদ প্লটের কারণে। উপন্যাসটির দুইটি মূল চরিত্র বিত্তবান পরিবারের ছেলে অমিত রায় এবং মধ্যবিত্ত পরিবারের মেয়ে লাবণ্য লতা। এছাড়াও রয়েছে দুইটি পার্শ্বচরিত্র শোভনলাল এবং কেতকী। দুই বিপরীতধর্মী মূল চরিত্রের মাঝে যখনই প্রণয় সৃষ্টি হয়, তখনই আবির্ভাব ঘটে এই দুই পার্শ্বচরিত্রের, এবং তারা গুরুত্বপূর্ণ চরিত্রতে পরিণত হয়ে উঠে। নান্দনিক শব্দের ব্যবহার বইটিকে করে তুলেছে আরো চমকপ্রদ।",
-            specs: {
-                "Name": "শেষের কবিতা",
-                "Category": "চিরায়ত উপন্যাস",
-                "Author": "রবীন্দ্রনাথ ঠাকুর",
-                "Edition": "১ম সংস্করণ",
-                "No of Page": "144",
-                "Language": "বাংলা",
-                "Publisher": "প্রিমিয়াম পাবলিকেশন্স",
-                "Country": "বাংলাদেশ"
+        };
+
+        // ========== MODAL ==========
+        const modal = document.getElementById('bookModal');
+        const modalBody = document.getElementById('modalBody');
+        const modalClose = document.getElementById('modalClose');
+
+        function openBookModal(bookKey) {
+            const book = bookData[bookKey];
+            if (!book) return;
+
+            let specsHtml = '';
+            for (const [key, value] of Object.entries(book.specs)) {
+                specsHtml += `<span>${key}:</span><span>${value}</span>`;
             }
-        },
-        book3: {
-            title: "দেবদাস (পেপারব্যাক)",
-            image: "devdas.jpg",
-            author: "শরৎচন্দ্র চট্টোপাধ্যায়",
-            publisher: "প্রিমিয়াম পাবলিকেশন্স",
-            category: "চিরায়ত উপন্যাস",
-            summary: "শরৎচন্দ্র চট্টোপাধ্যায়ের কালজয়ী উপন্যাস 'দেবদাস' এর নাম শুনেনি, এমন পাঠক বোধহয় খুব কমই আছে। এই উপন্যাসটিকে প্রণয়কালীন ট্র্যাজেডি বললে খুব একটা ভুল হবে না। তৎকালীন সামাজিক বৈষম্য এবং আত্ম-অহংকারী চেতনার ফলে দুটি জীবনের এক না হওয়ার নির্মম পরিণতি এই উপন্যাসটির মূল বিষয়বস্তু। ঊনবিংশ শতাব্দীর সামাজিক চিত্র, কুসংস্কার, প্রথা ধরে রাখার রীতি, বিলেত যাওয়ার প্রবণতা, বিশেষ করে উচ্চ ও নিম্নবিত্ত ভেদাভেদের কারণে প্রেমে অপূর্ণতা; সবকিছু মিলিয়ে তখনকার সমাজের একটি সুস্পষ্ট চিত্র রয়েছে উপন্যাসটিতে। দেবদাস হয়তো চাইলেই পারতো পার্বতীকে গ্রহন করতে, কিন্তু সমাজ-বৈষম্য সংস্কারের বাধা অতিক্রম করা তার জন্যে অসম্ভব ছিল, পরিশেষে সে পরিণত হলো বিরহকাতর এক প্রেমিকে।",
-            specs: {
-                "Name": "দেবদাস",
-                "Category": "চিরায়ত উপন্যাস",
-                "Author": "শরৎচন্দ্র চট্টোপাধ্যায়",
-                "Edition": "১ম সংস্করণ",
-                "No of Page": "144",
-                "Language": "বাংলা",
-                "Publisher": "প্রিমিয়াম পাবলিকেশন্স",
-                "Country": "বাংলাদেশ"
-            }
-        },
-        book4: {
-            title: "চাঁদের পাহাড় (পেপারব্যাক)",
-            image: "chander-pahar.jpg",
-            author: "বিভূতিভূষণ বন্দ্যোপাধ্যায়",
-            publisher: "প্রিমিয়াম পাবলিকেশন্স",
-            category: "রহস্য, গোয়েন্দা, থ্রিলার ও অ্যাডভেঞ্চার",
-            summary: "\"মানুষের আয়ু মানুষের জীবনের ভুল মাপকাঠি। দশ বছরের জীবন সে উপভোগ করেছে দেড় বছরে।\" দুঃসাহসিক অভিযানের স্বাদ পেতে চাঁদের পাহাড় বইটির জুড়ি নেই। শম্কর নামক ভারতীয় এক তরুণের আফ্রিকা মহাদেশের রোমাঞ্চকর অভিযান বইয়ের মূল প্লট। আফ্রিকার বিভিন্ন অঞ্চলের ভৌগোলিক স্থান, ভয়ংকর প্রাণী ও প্রাকৃতিক দৃশ্যের বাস্তব রূপ চিত্রায়িত করা হয়েছে উপন্যাসটিতে। রুদ্ধশ্বাস অভিযান, লোমহর্ষক ঘটনাক্রম, কষ্ট, সাহস, বীরত্ব, আর বন্ধুত্বের নানা উদাহরণ সৃষ্টির মাধ্যমে এগিয়ে যেতে থাকে উপন্যাসের কাহিনী। বাংলা ভাষার জনপ্রিয় এই উপন্যাসটি ছোট থেকে বড় প্রত্যেকের মধ্যেই সৃষ্টি করে রোমাঞ্চকর এক অনুভূতি।",
-            specs: {
-                "Name": "চাঁদের পাহাড়",
-                "Category": "বয়স যখন ১২-১৭: রহস্য, গোয়েন্দা, থ্রিলার ও অ্যাডভেঞ্চার",
-                "Author": "বিভূতিভূষণ বন্দ্যোপাধ্যায়",
-                "Edition": "১ম সংস্করণ",
-                "No of Page": "128",
-                "Language": "বাংলা",
-                "Publisher": "প্রিমিয়াম পাবলিকেশন্স",
-                "Country": "বাংলাদেশ"
-            }
-        }
-    };
 
-    // ========== MODAL ==========
-    const modal = document.getElementById('bookModal');
-    const modalBody = document.getElementById('modalBody');
-    const modalClose = document.getElementById('modalClose');
-
-    function openBookModal(bookKey) {
-        const book = bookData[bookKey];
-        if (!book) return;
-
-        let specsHtml = '';
-        for (const [key, value] of Object.entries(book.specs)) {
-            specsHtml += `<span>${key}:</span><span>${value}</span>`;
-        }
-
-        modalBody.innerHTML = `
+            modalBody.innerHTML = `
             <div class="modal-book-cover" style="background-image: url('${book.image}'); margin: 0 auto 18px auto;"></div>
             <div class="modal-book-title">${book.title}</div>
             <div class="modal-book-meta">by ${book.author} | ${book.publisher}<br>Category: ${book.category}</div>
@@ -1661,231 +2008,231 @@
             <div class="specs-grid">${specsHtml}</div>
         `;
 
-        modal.classList.add('active');
-        document.body.classList.add('modal-open');
-    }
-
-    document.querySelectorAll('.read-more-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const bookKey = btn.getAttribute('data-book');
-            openBookModal(bookKey);
-        });
-    });
-
-    function closeModal() {
-        modal.classList.remove('active');
-        document.body.classList.remove('modal-open');
-    }
-
-    modalClose.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal();
-    });
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
-    });
-
-    // ========== ORDER FORM DYNAMIC SUMMARY ==========
-    const quantitySelect = document.getElementById('quantitySelect');
-    const dhakaOption = document.getElementById('dhakaOption');
-    const outsideOption = document.getElementById('outsideOption');
-    const deliveryRadios = document.querySelectorAll('input[name="delivery"]');
-
-    const summaryPackagePrice = document.getElementById('summaryPackagePrice');
-    const summaryQuantity = document.getElementById('summaryQuantity');
-    const summaryDelivery = document.getElementById('summaryDelivery');
-    const summaryTotal = document.getElementById('summaryTotal');
-
-    const PACKAGE_PRICE = 285;
-
-    function updateSummary() {
-        const qty = parseInt(quantitySelect.value) || 1;
-        const subtotal = PACKAGE_PRICE * qty;
-        let deliveryCharge = 0;
-        const selectedDelivery = document.querySelector('input[name="delivery"]:checked');
-
-        if (selectedDelivery) {
-            if (selectedDelivery.value === 'outside') {
-                deliveryCharge = 100;
-            } else {
-                deliveryCharge = 60;
-            }
-            dhakaOption.classList.toggle('selected', selectedDelivery.value === 'inside');
-            outsideOption.classList.toggle('selected', selectedDelivery.value === 'outside');
-            
-            summaryDelivery.textContent = `${deliveryCharge} টাকা`;
-            summaryTotal.textContent = `${subtotal + deliveryCharge} টাকা`;
-        } else {
-            dhakaOption.classList.remove('selected');
-            outsideOption.classList.remove('selected');
-            
-            summaryDelivery.textContent = `(ডেলিভারি এলাকা নির্বাচন করুন)`;
-            summaryTotal.textContent = `${subtotal} টাকা`;
+            modal.classList.add('active');
+            document.body.classList.add('modal-open');
         }
 
-        summaryPackagePrice.textContent = `${subtotal} টাকা`;
-        summaryQuantity.textContent = `${qty} সেট`;
-    }
-
-    quantitySelect.addEventListener('change', updateSummary);
-    deliveryRadios.forEach(radio => radio.addEventListener('change', updateSummary));
-    updateSummary();
-
-    // ========== FORM SUBMISSION & GOOGLE SHEET ==========
-    const orderForm = document.getElementById('orderForm');
-    const thankYouModal = document.getElementById('thankYouModal');
-    const displayOrderId = document.getElementById('displayOrderId');
-
-    // ⚠️ আপনার আসল Google Apps Script URL এখানে বসানো আছে
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzsVl2GwMRb0eJ8Ikb_gQelo94qFdrxIezgZQZgE4wISiTmdjYnAUtqsFGOPzCOxAmfOQ/exec'; 
-
-    orderForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        // সব আগের এরর হাইড করা
-        document.querySelectorAll('.field-error').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.invalid').forEach(el => el.classList.remove('invalid'));
-        document.getElementById('global-error').style.display = 'none';
-
-        const nameInput = document.getElementById('customerName');
-        const phoneInput = document.getElementById('customerPhone');
-        const addressInput = document.getElementById('customerAddress');
-        
-        const name = nameInput.value.trim();
-        const phone = phoneInput.value.trim();
-        const address = addressInput.value.trim();
-        const quantity = parseInt(quantitySelect.value);
-        const selectedDelivery = document.querySelector('input[name="delivery"]:checked');
-        
-        let isValid = true;
-
-        // ভ্যালিডেশন চেক
-        if (!name) {
-            document.getElementById('error-name').style.display = 'block';
-            nameInput.classList.add('invalid');
-            isValid = false;
-        }
-
-        const phoneClean = phone.replace(/[+\-\s]/g, '');
-        const phoneRegex = /^\d{11,}$/;
-        if (!phone || !phoneRegex.test(phoneClean)) {
-            document.getElementById('error-phone').style.display = 'block';
-            phoneInput.classList.add('invalid');
-            isValid = false;
-        }
-
-        if (!address) {
-            document.getElementById('error-address').style.display = 'block';
-            addressInput.classList.add('invalid');
-            isValid = false;
-        }
-
-        if (!selectedDelivery) {
-            document.getElementById('error-delivery').style.display = 'block';
-            isValid = false;
-        }
-
-        // যদি কোনো ভুল থাকে, তাহলে ফর্ম সাবমিট হবে না
-        if (!isValid) {
-            return;
-        }
-
-        // যদি সব ঠিক থাকে, তাহলে নিচের অংশ এক্সিকিউট হবে
-        const deliveryArea = selectedDelivery.value;
-        const deliveryCharge = deliveryArea === 'inside' ? 60 : 100;
-        const subtotal = PACKAGE_PRICE * quantity;
-        const total = subtotal + deliveryCharge;
-        const note = document.getElementById('orderNote').value.trim();
-
-        const submitBtn = orderForm.querySelector('.submit-btn');
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'অর্ডার পাঠানো হচ্ছে...';
-
-        const payload = {
-            name: name,
-            phone: phone,
-            address: address,
-            total: total,
-            delivery_area: deliveryArea === 'inside' ? 'ঢাকার ভেতরে' : 'ঢাকার বাইরে',
-            delivery_charge: deliveryCharge,
-            quantity: quantity,
-            subtotal: subtotal,
-            note: note
-        };
-
-        try {
-            const response = await fetch(SCRIPT_URL, {
-                method: 'POST',
-                body: JSON.stringify(payload)
+        document.querySelectorAll('.read-more-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const bookKey = btn.getAttribute('data-book');
+                openBookModal(bookKey);
             });
-
-            const data = await response.json();
-
-            if (data.result === "success") {
-                displayOrderId.textContent = data.order_id; 
-                thankYouModal.classList.add('active');
-                document.body.classList.add('modal-open');
-
-                orderForm.reset();
-                quantitySelect.value = '1';
-                document.querySelector('input[name="delivery"][value="inside"]').checked = true;
-                updateSummary();
-            } else {
-                throw new Error("Server error");
-            }
-
-        } catch (error) {
-            console.error('Order error:', error);
-            const globalError = document.getElementById('global-error');
-            globalError.textContent = 'দুঃখিত, অর্ডার জমা দিতে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন বা সরাসরি WhatsApp-এ যোগাযোগ করুন।';
-            globalError.style.display = 'block';
-        } finally {
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'অর্ডার কনফার্ম করুন';
-        }
-    });
-
-    // ইনপুটে টাইপ করলে এরর মেসেজ সরিয়ে নেওয়া
-    document.getElementById('customerName').addEventListener('input', function() {
-        this.classList.remove('invalid');
-        document.getElementById('error-name').style.display = 'none';
-    });
-    document.getElementById('customerPhone').addEventListener('input', function() {
-        this.classList.remove('invalid');
-        document.getElementById('error-phone').style.display = 'none';
-    });
-    document.getElementById('customerAddress').addEventListener('input', function() {
-        this.classList.remove('invalid');
-        document.getElementById('error-address').style.display = 'none';
-    });
-    document.querySelectorAll('input[name="delivery"]').forEach(radio => {
-        radio.addEventListener('change', function() {
-            document.getElementById('error-delivery').style.display = 'none';
         });
-    });
 
-    // পপআপ বন্ধ করার ফাংশন
-    thankYouModal.addEventListener('click', (e) => {
-        if (e.target === thankYouModal) {
-            thankYouModal.classList.remove('active');
+        function closeModal() {
+            modal.classList.remove('active');
             document.body.classList.remove('modal-open');
         }
-    });
 
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href === '#') return;
-            const target = document.querySelector(href);
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+        });
+
+        // ========== ORDER FORM DYNAMIC SUMMARY ==========
+        const quantitySelect = document.getElementById('quantitySelect');
+        const dhakaOption = document.getElementById('dhakaOption');
+        const outsideOption = document.getElementById('outsideOption');
+        const deliveryRadios = document.querySelectorAll('input[name="delivery"]');
+
+        const summaryPackagePrice = document.getElementById('summaryPackagePrice');
+        const summaryQuantity = document.getElementById('summaryQuantity');
+        const summaryDelivery = document.getElementById('summaryDelivery');
+        const summaryTotal = document.getElementById('summaryTotal');
+
+        const PACKAGE_PRICE = 285;
+
+        function updateSummary() {
+            const qty = parseInt(quantitySelect.value) || 1;
+            const subtotal = PACKAGE_PRICE * qty;
+            let deliveryCharge = 0;
+            const selectedDelivery = document.querySelector('input[name="delivery"]:checked');
+
+            if (selectedDelivery) {
+                if (selectedDelivery.value === 'outside') {
+                    deliveryCharge = 100;
+                } else {
+                    deliveryCharge = 60;
+                }
+                dhakaOption.classList.toggle('selected', selectedDelivery.value === 'inside');
+                outsideOption.classList.toggle('selected', selectedDelivery.value === 'outside');
+
+                summaryDelivery.textContent = `${deliveryCharge} টাকা`;
+                summaryTotal.textContent = `${subtotal + deliveryCharge} টাকা`;
+            } else {
+                dhakaOption.classList.remove('selected');
+                outsideOption.classList.remove('selected');
+
+                summaryDelivery.textContent = `(ডেলিভারি এলাকা নির্বাচন করুন)`;
+                summaryTotal.textContent = `${subtotal} টাকা`;
+            }
+
+            summaryPackagePrice.textContent = `${subtotal} টাকা`;
+            summaryQuantity.textContent = `${qty} সেট`;
+        }
+
+        quantitySelect.addEventListener('change', updateSummary);
+        deliveryRadios.forEach(radio => radio.addEventListener('change', updateSummary));
+        updateSummary();
+
+        // ========== FORM SUBMISSION & GOOGLE SHEET ==========
+        const orderForm = document.getElementById('orderForm');
+        const thankYouModal = document.getElementById('thankYouModal');
+        const displayOrderId = document.getElementById('displayOrderId');
+
+        // ⚠️ আপনার আসল Google Apps Script URL এখানে বসানো আছে
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzsVl2GwMRb0eJ8Ikb_gQelo94qFdrxIezgZQZgE4wISiTmdjYnAUtqsFGOPzCOxAmfOQ/exec';
+
+        orderForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // সব আগের এরর হাইড করা
+            document.querySelectorAll('.field-error').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.invalid').forEach(el => el.classList.remove('invalid'));
+            document.getElementById('global-error').style.display = 'none';
+
+            const nameInput = document.getElementById('customerName');
+            const phoneInput = document.getElementById('customerPhone');
+            const addressInput = document.getElementById('customerAddress');
+
+            const name = nameInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const address = addressInput.value.trim();
+            const quantity = parseInt(quantitySelect.value);
+            const selectedDelivery = document.querySelector('input[name="delivery"]:checked');
+
+            let isValid = true;
+
+            // ভ্যালিডেশন চেক
+            if (!name) {
+                document.getElementById('error-name').style.display = 'block';
+                nameInput.classList.add('invalid');
+                isValid = false;
+            }
+
+            const phoneClean = phone.replace(/[+\-\s]/g, '');
+            const phoneRegex = /^\d{11,}$/;
+            if (!phone || !phoneRegex.test(phoneClean)) {
+                document.getElementById('error-phone').style.display = 'block';
+                phoneInput.classList.add('invalid');
+                isValid = false;
+            }
+
+            if (!address) {
+                document.getElementById('error-address').style.display = 'block';
+                addressInput.classList.add('invalid');
+                isValid = false;
+            }
+
+            if (!selectedDelivery) {
+                document.getElementById('error-delivery').style.display = 'block';
+                isValid = false;
+            }
+
+            // যদি কোনো ভুল থাকে, তাহলে ফর্ম সাবমিট হবে না
+            if (!isValid) {
+                return;
+            }
+
+            // যদি সব ঠিক থাকে, তাহলে নিচের অংশ এক্সিকিউট হবে
+            const deliveryArea = selectedDelivery.value;
+            const deliveryCharge = deliveryArea === 'inside' ? 60 : 100;
+            const subtotal = PACKAGE_PRICE * quantity;
+            const total = subtotal + deliveryCharge;
+            const note = document.getElementById('orderNote').value.trim();
+
+            const submitBtn = orderForm.querySelector('.submit-btn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'অর্ডার পাঠানো হচ্ছে...';
+
+            const payload = {
+                name: name,
+                phone: phone,
+                address: address,
+                total: total,
+                delivery_area: deliveryArea === 'inside' ? 'ঢাকার ভেতরে' : 'ঢাকার বাইরে',
+                delivery_charge: deliveryCharge,
+                quantity: quantity,
+                subtotal: subtotal,
+                note: note
+            };
+
+            try {
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await response.json();
+
+                if (data.result === "success") {
+                    displayOrderId.textContent = data.order_id;
+                    thankYouModal.classList.add('active');
+                    document.body.classList.add('modal-open');
+
+                    orderForm.reset();
+                    quantitySelect.value = '1';
+                    document.querySelector('input[name="delivery"][value="inside"]').checked = true;
+                    updateSummary();
+                } else {
+                    throw new Error("Server error");
+                }
+
+            } catch (error) {
+                console.error('Order error:', error);
+                const globalError = document.getElementById('global-error');
+                globalError.textContent = 'দুঃখিত, অর্ডার জমা দিতে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন বা সরাসরি WhatsApp-এ যোগাযোগ করুন।';
+                globalError.style.display = 'block';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'অর্ডার কনফার্ম করুন';
             }
         });
-    });
-</script>
+
+        // ইনপুটে টাইপ করলে এরর মেসেজ সরিয়ে নেওয়া
+        document.getElementById('customerName').addEventListener('input', function () {
+            this.classList.remove('invalid');
+            document.getElementById('error-name').style.display = 'none';
+        });
+        document.getElementById('customerPhone').addEventListener('input', function () {
+            this.classList.remove('invalid');
+            document.getElementById('error-phone').style.display = 'none';
+        });
+        document.getElementById('customerAddress').addEventListener('input', function () {
+            this.classList.remove('invalid');
+            document.getElementById('error-address').style.display = 'none';
+        });
+        document.querySelectorAll('input[name="delivery"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                document.getElementById('error-delivery').style.display = 'none';
+            });
+        });
+
+        // পপআপ বন্ধ করার ফাংশন
+        thankYouModal.addEventListener('click', (e) => {
+            if (e.target === thankYouModal) {
+                thankYouModal.classList.remove('active');
+                document.body.classList.remove('modal-open');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
