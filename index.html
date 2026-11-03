@@ -1072,6 +1072,23 @@
         .thankyou-overlay.active .thankyou-card {
             transform: translateY(0) scale(1);
         }
+         /* নতুন ক্রস বাটনের ডিজাইন */
+        .thankyou-close {
+            position: absolute;
+            top: 15px;
+            right: 18px;
+            font-size: 24px;
+            color: #687B86;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: 0.2s;
+            line-height: 1;
+        }
+          .thankyou-close:hover {
+            color: #D9776A;
+            transform: scale(1.1);
+        }
 
         .success-checkmark {
             width: 80px;
@@ -1882,6 +1899,8 @@
     <!-- Thank You Animated Modal -->
     <div class="thankyou-overlay" id="thankYouModal">
         <div class="thankyou-card">
+              <button class="thankyou-close" onclick="closeThankYouModal()">×</button>
+
             <div class="success-checkmark">
                 <i class="fas fa-check"></i>
             </div>
@@ -2218,6 +2237,12 @@
                 thankYouModal.classList.remove('active');
                 document.body.classList.remove('modal-open');
             }
+                // পপআপ বন্ধ করার ফাংশন (ক্রস বাটনের জন্য)
+    function closeThankYouModal() {
+        const thankYouModal = document.getElementById('thankYouModal');
+        thankYouModal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+    }
         });
 
         // Smooth scroll for anchor links
