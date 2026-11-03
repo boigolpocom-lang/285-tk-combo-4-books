@@ -1210,6 +1210,29 @@
             .modal-content { padding: 20px 15px; max-height: 90vh; }
             .specs-grid { grid-template-columns: 1fr; }
         }
+                /* ===== WHY SECTION COMPACT FIX FOR MOBILE ===== */
+        @media (max-width: 768px) {
+            .why-section {
+                padding: 20px 15px; /* সেকশনের ভেতরের প্যাডিং কমানো হলো */
+                margin: 20px 0;
+            }
+            .why-title {
+                font-size: 1.2rem; /* টাইটেল ফন্ট ছোট করা হলো */
+                margin-bottom: 15px; /* টাইটেলের নিচের গ্যাপ কমানো হলো */
+            }
+            .why-list {
+                gap: 10px; /* লিস্টের আইটেমগুলোর মাঝের গ্যাপ কমানো হলো */
+            }
+            .why-item {
+                font-size: 0.85rem; /* লেখার সাইজ ছোট করা হলো */
+                padding: 8px 12px; /* বক্সের ভেতরের প্যাডিং কমানো হলো */
+                gap: 8px;
+                line-height: 1.4;
+            }
+            .why-item::before {
+                font-size: 1.2rem; /* বুলেট পয়েন্টের সাইজ ছোট করা হলো */
+            }
+        }
     </style>
 </head>
 <body>
