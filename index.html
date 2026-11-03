@@ -1203,10 +1203,18 @@
             .footer-slogan { margin: 12px auto 16px; }
             .footer-contact { align-items: center; }
             
-            /* মডাল ফিক্স */
-            .modal-content { padding: 20px 15px; max-height: 90vh; }
-            .specs-grid { grid-template-columns: 1fr; }
-        }
+                        /* মডাল (পপআপ) ফিক্স */
+            .modal-content {
+                padding: 20px 15px;
+                max-height: 90vh;
+            }
+            
+            /* পপআপের স্পেসিফিকেশন পাশাপাশি দেখানোর জন্য */
+            .specs-grid {
+                grid-template-columns: repeat(2, 1fr) !important; /* ২টি কলাম */
+                gap: 8px 10px; /* পাশাপাশি থাকার গ্যাপ */
+                font-size: 0.8rem; /* লেখা একটু ছোট করা হলো */
+            }
                 /* ===== WHY SECTION COMPACT FIX FOR MOBILE ===== */
         @media (max-width: 768px) {
             .why-section {
