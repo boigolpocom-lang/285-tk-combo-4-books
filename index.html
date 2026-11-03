@@ -652,19 +652,19 @@
             margin-right: 4px;
         }
 
-        .form-row {
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-        }
-
-        .quantity-group {
-            flex: 0 0 130px;
-        }
-
-        .delivery-group {
-            flex: 1;
-        }
+                   .form-row {
+                flex-direction: column;
+                gap: 4px; /* আগে ১০ বা তার বেশি ছিল, এখানে ৪ করলাম */
+            }
+            .form-group {
+                margin-bottom: 8px; /* ইনপুটের নিচের গ্যাপ কমানো হলো */
+            }
+            .quantity-group {
+                margin-bottom: 0px !important; /* পরিমাণ এর নিচের এক্সট্রা গ্যাপ বাদ */
+            }
+            .delivery-group {
+                margin-top: 8px; /* ডেলিভারি এলাকার উপরের গ্যাপ কমিয়ে আনা হলো */
+            }
 
         /* Order Form Section */
         .order-section {
@@ -1171,62 +1171,44 @@
             25% { transform: translateX(-3px); }
             75% { transform: translateX(3px); }
         }
-                /* ===== MOBILE RESPONSIVE FIXES (FOR ALL PHONES) ===== */
+                       /* ===== MOBILE RESPONSIVE FIXES ===== */
         @media (max-width: 768px) {
-            .hero {
-                flex-direction: column-reverse;
-                padding: 20px 16px;
-                text-align: center;
-                gap: 20px;
-            }
+            .header-inner { flex-direction: column; gap: 10px; text-align: center; }
+            .hero { flex-direction: column-reverse; padding: 20px 16px; text-align: center; gap: 20px; }
+            .hero-title { font-size: 1.5rem !important; line-height: 1.4; }
+            .price-area { justify-content: center; flex-direction: row; gap: 8px; }
+            .hero-cta-group { justify-content: center; flex-direction: row; width: 100%; gap: 10px; }
+            .hero-cta-group a { width: 48%; padding: 10px 15px; font-size: 0.9rem; }
+            .product-image { max-width: 220px; }
             
-            .hero-title {
-                font-size: 1.5rem !important;
-            }
+            /* বুক গ্রিড ফিক্স */
+            .books-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; max-width: 100%; margin-left: auto; margin-right: auto; }
+            .book-card { padding: 10px !important; }
             
-            .product-image {
-                max-width: 200px;
-            }
-
-            .books-grid {
-                grid-template-columns: repeat(2, 1fr) !important;
-                gap: 10px !important;
-            }
+            /* অফার লিস্ট ফিক্স */
+            .offer-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; max-width: 280px; margin: 15px auto; }
             
-            .book-card {
-                padding: 10px !important;
-            }
-
-            .book-title { font-size: 0.9rem; }
-            .book-author { font-size: 0.75rem; }
-            .book-snippet { font-size: 0.75rem; }
-
+            /* ফর্ম ফিল্ড ফিক্স (গ্যাপ কমানোর জন্য) */
             .order-flex { flex-direction: column; }
-            .order-form, .order-summary { padding: 20px 15px; }
-            .form-row { flex-direction: column; gap: 10px; }
+            .order-form { padding: 15px 12px; gap: 8px; } /* ফর্মের ভেতরের গ্যাপ কমানো হলো */
+            .form-row { flex-direction: column; gap: 4px; }
+            .form-group { margin-bottom: 6px; } /* প্রতিটি ফিল্ডের নিচের গ্যাপ কমানো হলো */
+            .quantity-group { margin-bottom: 0 !important; }
+            .delivery-group { margin-top: 4px; } 
             
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-                align-items: center;
-            }
+            .radio-group { flex-direction: row; gap: 8px; margin-top: 4px; }
+            .radio-option { flex: 1; min-width: 120px; padding: 8px 5px; font-size: 0.8rem; }
             
-            /* ফন্ট সাইজ ও জুম ফিক্স */
-            body { font-size: 15px; }
-            .container { padding: 0 15px; }
-        }
-
-        /* খুব ছোট ফোনের জন্য (যেমন Samsung A-series) */
-        @media (max-width: 380px) {
-            .books-grid {
-                grid-template-columns: repeat(2, 1fr) !important;
-            }
-            .radio-group {
-                flex-direction: column;
-            }
-            .radio-option {
-                width: 100%;
-            }
+            /* কন্টাক্ট ও ফুটার ফিক্স */
+            .contact-btns { flex-direction: column; }
+            .contact-btn { width: 100%; justify-content: center; }
+            .footer-content { flex-direction: column; text-align: center; align-items: center; }
+            .footer-slogan { margin: 12px auto 16px; }
+            .footer-contact { align-items: center; }
+            
+            /* মডাল ফিক্স */
+            .modal-content { padding: 20px 15px; max-height: 90vh; }
+            .specs-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
