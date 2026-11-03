@@ -38,14 +38,14 @@
         }
 
         /* Header */
-        .header {
+          .header {
             background-color: #2F3E46;
             padding: 14px 0;
             border-radius: 0 0 20px 20px;
             margin-bottom: 24px;
         }
 
-        .header-inner {
+          .header-inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -76,15 +76,15 @@
         }
 
         .header-order-btn {
-            background: #52796F;
+            background: #D9776A; /* বাটনের কালার */
             color: white;
             border: none;
             padding: 10px 24px;
-            border-radius: 40px;
+            border-radius: 50px;
             font-weight: 600;
             font-size: 1rem;
             cursor: pointer;
-            box-shadow: 0 6px 0 #354F52;
+            box-shadow: none; /* শ্যাডো বাদ দেওয়া হলো */
             transition: all 0.15s ease;
             font-family: 'Noto Sans Bengali', sans-serif;
             text-decoration: none;
@@ -141,12 +141,13 @@
             font-weight: 400;
         }
 
-        .price-area {
+         .price-area {
             display: flex;
             align-items: baseline;
-            gap: 16px;
+            justify-content: center; /* সেন্টারে আনার জন্য */
+            gap: 8px; /* গ্যাপ কমিয়ে ৮ পিক্সেল করা হলো */
             flex-wrap: wrap;
-            margin-bottom: 22px;
+            margin-bottom: 18px;
         }
 
         .old-price {
@@ -165,8 +166,10 @@
 
         .hero-cta-group {
             display: flex;
+            justify-content: center; /* বাটন পাশাপাশি সেন্টারে */
+            gap: 12px;
             flex-wrap: wrap;
-            gap: 14px;
+            width: 100%;
         }
 
         .btn-primary {
@@ -213,11 +216,10 @@
             background: #A5AFB1;
         }
 
-        .hero-right {
-            flex: 0 1 300px;
+         .hero-right {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* ইমেজ সেন্টারে আনার জন্য */
+            width: 100%;
         }
 
         .product-image {
@@ -255,11 +257,14 @@
         }
 
         /* Book Cards */
-        .books-grid {
+            .books-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
+            grid-template-columns: repeat(2, 1fr); /* ২ কলাম */
+            gap: 12px; /* গ্যাপ কমানো হলো */
             margin: 18px 0 36px;
+            max-width: 500px; /* গ্রিড সেন্টারে রাখতে চওড়া সীমিত করা হলো */
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @media (min-width: 768px) {
@@ -516,13 +521,15 @@
             text-align: center;
         }
 
-        .offer-list {
+         .offer-list {
             list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px 24px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* ২টি কলাম */
+            gap: 10px 20px;
+            justify-items: center; /* আইটেম সেন্টারে */
             justify-content: center;
-            margin: 18px 0;
+            margin: 18px auto;
+            max-width: 350px;
         }
 
         .offer-list li {
@@ -747,23 +754,27 @@
 
         .radio-group {
             display: flex;
-            gap: 12px;
+            flex-direction: row; /* পাশাপাশি রাখার জন্য */
+            gap: 10px;
             flex-wrap: wrap;
             padding: 6px 0;
         }
 
-        .radio-option {
+          .radio-option {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 8px;
             background: #eef1f3;
-            padding: 10px 18px;
+            padding: 8px 10px;
             border-radius: 8px;
             border: 2px solid #A5AFB1;
             cursor: pointer;
             transition: 0.15s;
-            font-size: 0.9rem;
+            font-size: 0.85rem; /* লেখা একটু ছোট */
             font-weight: 500;
+            flex: 1; /* সমান জায়গা নেবে */
+            min-width: 120px; /* মিনিমাম সাইজ */
         }
 
         .radio-option.selected {
@@ -1085,7 +1096,23 @@
             .hero-title { font-size: 1.5rem; }
             .new-price { font-size: 1.8rem; }
             .hero { padding: 18px 16px; }
-            .btn-primary, .btn-secondary { padding: 12px 20px; font-size: 0.95rem; }
+
+             .btn-primary, .btn-secondary {
+            /* দুই বাটনের স্টাইল এক করা হলো */
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            font-family: 'Noto Sans Bengali', sans-serif;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1; /* বাটন সমান জায়গা নেবে */
+            max-width: 160px; /* বাটনের সর্বোচ্চ সাইজ */
+        }
+
             .book-card { padding: 12px 10px; }
             .order-section { padding: 18px 14px; }
             .section-title { font-size: 1.4rem; }
@@ -1143,6 +1170,63 @@
             0%, 100% { transform: translateX(0); }
             25% { transform: translateX(-3px); }
             75% { transform: translateX(3px); }
+        }
+                /* ===== MOBILE RESPONSIVE FIXES (FOR ALL PHONES) ===== */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+                padding: 20px 16px;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .hero-title {
+                font-size: 1.5rem !important;
+            }
+            
+            .product-image {
+                max-width: 200px;
+            }
+
+            .books-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 10px !important;
+            }
+            
+            .book-card {
+                padding: 10px !important;
+            }
+
+            .book-title { font-size: 0.9rem; }
+            .book-author { font-size: 0.75rem; }
+            .book-snippet { font-size: 0.75rem; }
+
+            .order-flex { flex-direction: column; }
+            .order-form, .order-summary { padding: 20px 15px; }
+            .form-row { flex-direction: column; gap: 10px; }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            
+            /* ফন্ট সাইজ ও জুম ফিক্স */
+            body { font-size: 15px; }
+            .container { padding: 0 15px; }
+        }
+
+        /* খুব ছোট ফোনের জন্য (যেমন Samsung A-series) */
+        @media (max-width: 380px) {
+            .books-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            .radio-group {
+                flex-direction: column;
+            }
+            .radio-option {
+                width: 100%;
+            }
         }
     </style>
 </head>
