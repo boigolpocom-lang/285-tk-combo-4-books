@@ -1231,12 +1231,27 @@
             }
         }
         /* ===== DESKTOP VIEW RESET (মোবাইলের কোড ডেস্কটপে কাজ করবে না) ===== */
-@media (min-width: 769px) {
-    .hero { flex-direction: row; padding: 28px 24px; text-align: left; }
-    .hero-cta-group { flex-direction: row; justify-content: flex-start; width: auto; }
+@media (min-width: 769px)
+
+{ .hero { 
+        flex-direction: row; /* লেখা বামে, ছবি ডানে */
+        align-items: center;
+        padding: 28px 24px; 
+        text-align: left; 
+    }
+    .hero-left {
+        flex: 1 1 300px;
+    }
+    .hero-right { 
+        flex: 0 1 300px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .hero-cta-group { flex-direction: row; justify-content: flex-start; width: auto; gap: 14px; }
     .hero-cta-group a { width: auto; }
+    
     .price-area { flex-direction: row; justify-content: flex-start; gap: 16px; }
-    .hero-right { justify-content: flex-end; }
+    
     .product-image { max-width: 280px; }
     
     .books-grid { grid-template-columns: repeat(4, 1fr) !important; max-width: 100%; }
@@ -1250,6 +1265,38 @@
     .footer-content { flex-direction: row; text-align: left; align-items: flex-start; }
     .footer-contact { align-items: flex-start; }
     .contact-btns { flex-direction: row; justify-content: center; }
+            /* ===== DESKTOP WHY SECTION BIGGER ===== */
+        @media (min-width: 769px) {
+            .why-section {
+                padding: 60px 40px; /* প্যাডিং অনেক বাড়ানো হলো */
+                margin: 50px auto;
+                max-width: 1100px; /* সেকশনটি আরও চওড়া করা হলো */
+                border-radius: 40px; /* বর্ডার রেডিয়াস বড় করা হলো */
+            }
+
+            .why-title {
+                font-size: 2.5rem; /* টাইটেল বড় করা হলো */
+                margin-bottom: 40px;
+            }
+
+            .why-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* লেখাগুলো ডেস্কটপে ২ কলামে সাজানো হবে */
+                gap: 20px;
+                max-width: 100%;
+            }
+
+            .why-item {
+                font-size: 1.25rem; /* লেখার সাইজ বড় করা হলো */
+                padding: 20px 24px; /* বক্সের ভেতরের প্যাডিং বড় করা হলো */
+                border-radius: 20px;
+                align-items: center; /* আইকন ও টেক্সট মাঝখানে রাখার জন্য */
+            }
+
+            .why-item::before {
+                font-size: 2.5rem; /* বুলেটের সাইজ বড় করা হলো */
+            }
+        }
 }
     </style>
 </head>
