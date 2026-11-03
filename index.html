@@ -2231,19 +2231,20 @@
             });
         });
 
-        // পপআপ বন্ধ করার ফাংশন
-        thankYouModal.addEventListener('click', (e) => {
-            if (e.target === thankYouModal) {
-                thankYouModal.classList.remove('active');
-                document.body.classList.remove('modal-open');
-            }
-                // পপআপ বন্ধ করার ফাংশন (ক্রস বাটনের জন্য)
+            // পপআপ বন্ধ করার ফাংশন (বাইরে ক্লিক করলে)
+    thankYouModal.addEventListener('click', (e) => {
+        if (e.target === thankYouModal) {
+            thankYouModal.classList.remove('active');
+            document.body.classList.remove('modal-open');
+        }
+    });
+
+    // পপআপ বন্ধ করার ফাংশন (ক্রস বাটনের জন্য)
     function closeThankYouModal() {
-        const thankYouModal = document.getElementById('thankYouModal');
-        thankYouModal.classList.remove('active');
+        const modal = document.getElementById('thankYouModal');
+        modal.classList.remove('active');
         document.body.classList.remove('modal-open');
     }
-        });
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
